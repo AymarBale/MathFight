@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Red_Bunny_Idle_002.png-312a82d29b499a87512b52524424a9fe.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Pre_start_screen/asset_final_for_pre_start/Boxing animal sprite/Boxing Animal Sprites/PNG/Red Team/Bunny/01 Idle/Red_Bunny_Idle_002.png"
+dest_files=[ "res://.import/Red_Bunny_Idle_002.png-312a82d29b499a87512b52524424a9fe.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

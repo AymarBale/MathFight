@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/UI_come_in_play.wav-9cb4d9975a20f2b9f0a4df53c5e043cd.sample"
+
+[deps]
+
+source_file="res://Pre_start_screen/Intro/UI_come_in_play.wav"
+dest_files=[ "res://.import/UI_come_in_play.wav-9cb4d9975a20f2b9f0a4df53c5e043cd.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

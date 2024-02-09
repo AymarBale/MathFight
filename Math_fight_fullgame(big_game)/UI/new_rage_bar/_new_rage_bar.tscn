@@ -1,0 +1,101 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://UI/new_rage_bar/rage_bar.gd" type="Script" id=1]
+[ext_resource path="res://UI/new_rage_bar/Simple Healthbars/HB_8.1-Healthy.png" type="Texture" id=2]
+[ext_resource path="res://UI/new_rage_bar/Simple Healthbars/HB_8.1-Hurt.png" type="Texture" id=3]
+[ext_resource path="res://UI/fonts/GravityBold8.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://UI/new_rage_bar/Simple Healthbars/FullHealthy.png" type="Texture" id=5]
+[ext_resource path="res://UI/new_rage_bar/red/angry.png" type="Texture" id=6]
+[ext_resource path="res://UI/new_rage_bar/red/smile.png" type="Texture" id=7]
+[ext_resource path="res://UI/new_rage_bar/red/surprised.png" type="Texture" id=8]
+[ext_resource path="res://UI/mad_and_happy_sound/Heavy Swing_1.wav" type="AudioStream" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 4 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "happy",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "pissed",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "angry",
+"speed": 5.0
+} ]
+
+[node name="rage_bar" type="Node2D"]
+position = Vector2( 638.116, 99.9459 )
+scale = Vector2( 0.8, 0.8 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="R_bar" type="Node2D" parent="."]
+position = Vector2( 185.917, 296.805 )
+rotation = -1.5708
+scale = Vector2( 0.4, 0.4 )
+
+[node name="TextureProgress" type="TextureProgress" parent="R_bar"]
+margin_left = -0.295532
+margin_top = -3.20087
+margin_right = 705.704
+margin_bottom = 92.7991
+max_value = 140.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Angry_timer" type="Timer" parent="R_bar"]
+one_shot = true
+
+[node name="Pissed_timer" type="Timer" parent="R_bar"]
+one_shot = true
+
+[node name="Destruction_timer" type="Timer" parent="R_bar"]
+one_shot = true
+
+[node name="Full_bar" type="Sprite" parent="R_bar"]
+visible = false
+position = Vector2( 346.478, 44.0973 )
+texture = ExtResource( 5 )
+
+[node name="Happy_timer" type="Timer" parent="R_bar"]
+one_shot = true
+
+[node name="Label" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="mood" type="AnimatedSprite" parent="."]
+position = Vector2( 254.955, 268.33 )
+scale = Vector2( 0.2, 0.2 )
+frames = SubResource( 2 )
+animation = "happy"
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 260.503, 24.7024 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="mad_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 9 )
+
+[connection signal="timeout" from="R_bar/Angry_timer" to="." method="_on_Angry_timer_timeout"]
+[connection signal="timeout" from="R_bar/Pissed_timer" to="." method="_on_Pissed_timer_timeout"]
+[connection signal="timeout" from="R_bar/Destruction_timer" to="." method="_on_Destruction_timer_timeout"]
+[connection signal="timeout" from="R_bar/Happy_timer" to="." method="_on_Happy_timer_timeout"]

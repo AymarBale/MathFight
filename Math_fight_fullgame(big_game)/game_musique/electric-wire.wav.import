@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/electric-wire.wav-5db598457c780ffe4411dbce4e8f5145.sample"
+
+[deps]
+
+source_file="res://game_musique/electric-wire.wav"
+dest_files=[ "res://.import/electric-wire.wav-5db598457c780ffe4411dbce4e8f5145.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

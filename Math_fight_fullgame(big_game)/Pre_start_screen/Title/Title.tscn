@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Pre_start_screen/Title/burst_background_large_screen_blue.png" type="Texture" id=1]
+[ext_resource path="res://Pre_start_screen/number background/Title.gd" type="Script" id=2]
+
+[node name="Title" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="number_appearance" type="Node2D" parent="."]
+
+[node name="A1" type="Position2D" parent="number_appearance"]
+position = Vector2( 113.393, 110.873 )
+
+[node name="A2" type="Position2D" parent="number_appearance"]
+position = Vector2( 662.719, 415.774 )
+
+[node name="A3" type="Position2D" parent="number_appearance"]
+position = Vector2( 85.6747, 516.568 )
+
+[node name="B1" type="Position2D" parent="number_appearance"]
+position = Vector2( 370.417, 539.247 )
+
+[node name="B2" type="Position2D" parent="number_appearance"]
+position = Vector2( 418.294, 85.6747 )
+
+[node name="B3" type="Position2D" parent="number_appearance"]
+position = Vector2( 922.263, 476.25 )
+
+[node name="C1" type="Position2D" parent="number_appearance"]
+position = Vector2( 811.39, 120.952 )
+
+[node name="C2" type="Position2D" parent="number_appearance"]
+position = Vector2( 942.422, 241.905 )
+
+[node name="C3" type="Position2D" parent="number_appearance"]
+position = Vector2( 231.826, 287.262 )
+
+[node name="number_container" type="Node2D" parent="."]
+
+[node name="r_one" type="Node2D" parent="number_container"]
+
+[node name="Timer_one" type="Timer" parent="number_container/r_one"]
+wait_time = 3.0
+one_shot = true
+
+[node name="r_two" type="Node2D" parent="number_container"]
+
+[node name="Timer_two" type="Timer" parent="number_container/r_two"]
+wait_time = 3.0
+one_shot = true
+
+[node name="r_three" type="Node2D" parent="number_container"]
+
+[node name="Timer_three" type="Timer" parent="number_container/r_three"]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="number_container/r_one/Timer_one" to="." method="_on_Timer_one_timeout"]
+[connection signal="timeout" from="number_container/r_two/Timer_two" to="." method="_on_Timer_two_timeout"]
+[connection signal="timeout" from="number_container/r_three/Timer_three" to="." method="_on_Timer_three_timeout"]

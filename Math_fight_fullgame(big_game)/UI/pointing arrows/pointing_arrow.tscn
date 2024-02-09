@@ -1,0 +1,105 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://UI/pointing arrows/arrow.png" type="Texture" id=2]
+[ext_resource path="res://UI/pointing arrows/pointing_arrow.gd" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 27.8856, 27.6885 )
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 49.5523
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 41.6956
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 5, 42.7073 )
+
+[node name="pointing_arrow" type="Node2D"]
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="bloc" type="Area2D" parent="."]
+position = Vector2( 0, -1.88776 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bloc"]
+position = Vector2( 1.88776, 0 )
+shape = SubResource( 1 )
+
+[node name="Arrows" type="Node2D" parent="."]
+position = Vector2( -296, -233.888 )
+
+[node name="Right_arrow" type="Area2D" parent="Arrows"]
+position = Vector2( 357.617, 232 )
+scale = Vector2( 0.35, 0.35 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SaveSlotSeletcor2" type="Sprite" parent="Arrows/Right_arrow"]
+scale = Vector2( 1, 0.8 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arrows/Right_arrow"]
+shape = SubResource( 2 )
+
+[node name="up_arrow" type="Area2D" parent="Arrows"]
+position = Vector2( 294.664, 172.9 )
+scale = Vector2( 0.35, 0.35 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SaveSlotSeletcor2" type="Sprite" parent="Arrows/up_arrow"]
+rotation = -1.5708
+scale = Vector2( 1, 0.8 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arrows/up_arrow"]
+shape = SubResource( 2 )
+
+[node name="Down_arrow" type="Area2D" parent="Arrows"]
+position = Vector2( 296, 288 )
+rotation = 3.14159
+scale = Vector2( 0.35, 0.35 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SaveSlotSeletcor2" type="Sprite" parent="Arrows/Down_arrow"]
+rotation = -1.5708
+scale = Vector2( 1, 0.8 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arrows/Down_arrow"]
+shape = SubResource( 2 )
+
+[node name="Left_arrow" type="Area2D" parent="Arrows"]
+position = Vector2( 237.791, 231.555 )
+scale = Vector2( 0.35, 0.35 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SaveSlotSeletcor" type="Sprite" parent="Arrows/Left_arrow"]
+position = Vector2( 2.54565, -2.54535 )
+scale = Vector2( 1, 0.8 )
+texture = ExtResource( 2 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arrows/Left_arrow"]
+shape = SubResource( 3 )
+
+[node name="Walls" type="Node2D" parent="."]
+position = Vector2( -296, -233.888 )
+
+[node name="wall_left" type="Area2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/wall_left"]
+position = Vector2( 201, 229 )
+shape = SubResource( 4 )
+
+[connection signal="area_entered" from="bloc" to="." method="_on_bloc_area_entered"]
+[connection signal="area_entered" from="Walls/wall_left" to="." method="_on_come_back_wall_area_entered"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/dbz-teleport.wav-5a0b95338ec87be5e9ce105ec4094dea.sample"
+
+[deps]
+
+source_file="res://Level/Math_fight_audio_asset_file/dbz-teleport.wav"
+dest_files=[ "res://.import/dbz-teleport.wav-5a0b95338ec87be5e9ce105ec4094dea.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

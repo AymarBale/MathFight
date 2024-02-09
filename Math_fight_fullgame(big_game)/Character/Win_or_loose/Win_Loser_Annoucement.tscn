@@ -1,0 +1,1423 @@
+[gd_scene load_steps=558 format=2]
+
+[ext_resource path="res://Character/Win_or_loose/Win_Loser_Annoucement.gd" type="Script" id=1]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Walk/__Boxing04_Walk_001.png" type="Texture" id=2]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Walk/__Boxing04_Walk_006.png" type="Texture" id=3]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Idle/__Boxing04_Idle_006.png" type="Texture" id=4]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/WalkBack/__Boxing04_WalkBack_006.png" type="Texture" id=5]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchRight/__Boxing04_PunchRight_005.png" type="Texture" id=6]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Idle/__Boxing04_Idle_008.png" type="Texture" id=7]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchLeft/__Boxing04_PunchLeft_001.png" type="Texture" id=8]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchLeft/__Boxing04_PunchLeft_003.png" type="Texture" id=9]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/WalkBack/__Boxing04_WalkBack_008.png" type="Texture" id=10]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/WalkBack/__Boxing04_WalkBack_003.png" type="Texture" id=11]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/WalkBack/__Boxing04_WalkBack_007.png" type="Texture" id=12]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/WalkBack/__Boxing04_WalkBack_000.png" type="Texture" id=13]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchLeft/__Boxing04_PunchLeft_005.png" type="Texture" id=14]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/WalkBack/__Boxing04_WalkBack_002.png" type="Texture" id=15]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Walk/__Boxing04_Walk_003.png" type="Texture" id=16]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Walk/__Boxing04_Walk_009.png" type="Texture" id=17]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchRight/__Boxing04_PunchRight_001.png" type="Texture" id=18]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Idle/__Boxing04_Idle_000.png" type="Texture" id=19]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/WalkBack/__Boxing04_WalkBack_005.png" type="Texture" id=20]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchRight/__Boxing04_PunchRight_000.png" type="Texture" id=21]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchRight/__Boxing04_PunchRight_004.png" type="Texture" id=22]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Idle/__Boxing04_Idle_001.png" type="Texture" id=23]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/WalkBack/__Boxing04_WalkBack_009.png" type="Texture" id=24]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Idle/__Boxing04_Idle_002.png" type="Texture" id=25]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Idle/__Boxing04_Idle_004.png" type="Texture" id=26]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Idle/__Boxing04_Idle_005.png" type="Texture" id=27]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Walk/__Boxing04_Walk_008.png" type="Texture" id=28]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Idle/__Boxing04_Idle_003.png" type="Texture" id=29]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Walk/__Boxing04_Walk_007.png" type="Texture" id=30]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Idle/__Boxing04_Idle_007.png" type="Texture" id=31]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Walk/__Boxing04_Walk_005.png" type="Texture" id=32]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Walk/__Boxing04_Walk_000.png" type="Texture" id=33]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/KO/__Boxing04_KO_005.png" type="Texture" id=34]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/KO/__Boxing04_KO_008.png" type="Texture" id=35]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Blocking/__Boxing04_Blocking_005.png" type="Texture" id=36]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchUp/__Boxing04_PunchUp_000.png" type="Texture" id=37]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Idle/__Boxing04_Idle_009.png" type="Texture" id=38]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchUp/__Boxing04_PunchUp_004.png" type="Texture" id=39]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Hurt/__Boxing04_Hurt_007.png" type="Texture" id=40]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchUp/__Boxing04_PunchUp_001.png" type="Texture" id=41]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Hurt/__Boxing04_Hurt_004.png" type="Texture" id=42]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Blocking/__Boxing04_Blocking_009.png" type="Texture" id=43]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Hurt/__Boxing04_Hurt_005.png" type="Texture" id=44]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/KO/__Boxing04_KO_007.png" type="Texture" id=45]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Hurt/__Boxing04_Hurt_006.png" type="Texture" id=46]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Blocking/__Boxing04_Blocking_003.png" type="Texture" id=47]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchLeft/__Boxing04_PunchLeft_002.png" type="Texture" id=48]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Blocking/__Boxing04_Blocking_001.png" type="Texture" id=49]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/KO/__Boxing04_KO_001.png" type="Texture" id=50]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchRight/__Boxing04_PunchRight_003.png" type="Texture" id=51]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Blocking/__Boxing04_Blocking_008.png" type="Texture" id=52]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Hurt/__Boxing04_Hurt_000.png" type="Texture" id=53]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Hurt/__Boxing04_Hurt_002.png" type="Texture" id=54]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Blocking/__Boxing04_Blocking_006.png" type="Texture" id=55]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchLeft/__Boxing04_PunchLeft_000.png" type="Texture" id=56]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/KO/__Boxing04_KO_004.png" type="Texture" id=57]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/KO/__Boxing04_KO_009.png" type="Texture" id=58]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchUp/__Boxing04_PunchUp_002.png" type="Texture" id=59]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/WalkBack/__Boxing04_WalkBack_004.png" type="Texture" id=60]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/KO/__Boxing04_KO_006.png" type="Texture" id=61]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Walk/__Boxing04_Walk_004.png" type="Texture" id=62]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchUp/__Boxing04_PunchUp_003.png" type="Texture" id=63]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Hurt/__Boxing04_Hurt_001.png" type="Texture" id=64]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchRight/__Boxing04_PunchRight_002.png" type="Texture" id=65]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchLeft/__Boxing04_PunchLeft_004.png" type="Texture" id=66]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Blocking/__Boxing04_Blocking_004.png" type="Texture" id=67]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/KO/__Boxing04_KO_002.png" type="Texture" id=68]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Blocking/__Boxing04_Blocking_002.png" type="Texture" id=69]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchUp/__Boxing04_PunchUp_005.png" type="Texture" id=70]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/PunchUp/__Boxing04_PunchUp_006.png" type="Texture" id=71]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Hurt/__Boxing04_Hurt_003.png" type="Texture" id=72]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/KO/__Boxing04_KO_000.png" type="Texture" id=73]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Walk/__Boxing04_Walk_002.png" type="Texture" id=74]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/KO/__Boxing04_KO_003.png" type="Texture" id=75]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/WalkBack/__Boxing04_WalkBack_001.png" type="Texture" id=76]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Blocking/__Boxing04_Blocking_007.png" type="Texture" id=77]
+[ext_resource path="res://Character/MiniBoxing/MiniBoxingSpriteLite/Blocking/__Boxing04_Blocking_000.png" type="Texture" id=78]
+[ext_resource path="res://UI/PaperUIKit/Pngs/DialogueTitle.png" type="Texture" id=79]
+[ext_resource path="res://UI/PaperUIKit/Pngs/RedTitle.png" type="Texture" id=80]
+[ext_resource path="res://UI/fonts/GravityBold8.ttf" type="DynamicFontData" id=81]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile020.png" type="Texture" id=82]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile015.png" type="Texture" id=83]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile011.png" type="Texture" id=84]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile012.png" type="Texture" id=85]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile013.png" type="Texture" id=86]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile014.png" type="Texture" id=87]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile021.png" type="Texture" id=88]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile022.png" type="Texture" id=89]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile023.png" type="Texture" id=90]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile016.png" type="Texture" id=91]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile017.png" type="Texture" id=92]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile010.png" type="Texture" id=93]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile018.png" type="Texture" id=94]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile019.png" type="Texture" id=95]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile027.png" type="Texture" id=96]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile028.png" type="Texture" id=97]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile025.png" type="Texture" id=98]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile024.png" type="Texture" id=99]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile026.png" type="Texture" id=100]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile029.png" type="Texture" id=101]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile056.png" type="Texture" id=102]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile053.png" type="Texture" id=103]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile049.png" type="Texture" id=104]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile050.png" type="Texture" id=105]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile051.png" type="Texture" id=106]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile054.png" type="Texture" id=107]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile055.png" type="Texture" id=108]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile052.png" type="Texture" id=109]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile009.png" type="Texture" id=110]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile002.png" type="Texture" id=111]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile000.png" type="Texture" id=112]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile003.png" type="Texture" id=113]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile001.png" type="Texture" id=114]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile004.png" type="Texture" id=115]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile005.png" type="Texture" id=116]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile006.png" type="Texture" id=117]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile007.png" type="Texture" id=118]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile008.png" type="Texture" id=119]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile058.png" type="Texture" id=120]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile059.png" type="Texture" id=121]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile060.png" type="Texture" id=122]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile057.png" type="Texture" id=123]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile061.png" type="Texture" id=124]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile062.png" type="Texture" id=125]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile063.png" type="Texture" id=126]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile039.png" type="Texture" id=127]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile040.png" type="Texture" id=128]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile043.png" type="Texture" id=129]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile044.png" type="Texture" id=130]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile030.png" type="Texture" id=131]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile033.png" type="Texture" id=132]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile034.png" type="Texture" id=133]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile035.png" type="Texture" id=134]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile037.png" type="Texture" id=135]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile038.png" type="Texture" id=136]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile041.png" type="Texture" id=137]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile042.png" type="Texture" id=138]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile031.png" type="Texture" id=139]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile032.png" type="Texture" id=140]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile036.png" type="Texture" id=141]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile045.png" type="Texture" id=142]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile048.png" type="Texture" id=143]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile047.png" type="Texture" id=144]
+[ext_resource path="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/tile046.png" type="Texture" id=145]
+[ext_resource path="res://Character/Win_or_loose/crown.png" type="Texture" id=146]
+[ext_resource path="res://Character/Win_or_loose/you_lose.ogg" type="AudioStream" id=147]
+[ext_resource path="res://Character/Win_or_loose/you_win.ogg" type="AudioStream" id=148]
+[ext_resource path="res://Character/Win_or_loose/cheering.wav" type="AudioStream" id=149]
+[ext_resource path="res://Character/Win_or_loose/disappionted_crowd.wav" type="AudioStream" id=150]
+[ext_resource path="res://Character/Win_or_loose/confetti.wav" type="AudioStream" id=151]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchUp/__Boxing02_PunchUp_005.png" type="Texture" id=152]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Idle/__Boxing02_Idle_001.png" type="Texture" id=153]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchRight/__Boxing02_PunchRight_002.png" type="Texture" id=154]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchRight/__Boxing02_PunchRight_001.png" type="Texture" id=155]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Hurt/__Boxing02_Hurt_005.png" type="Texture" id=156]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/KO/__Boxing02_KO_002.png" type="Texture" id=157]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Hurt/__Boxing02_Hurt_003.png" type="Texture" id=158]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Idle/__Boxing02_Idle_007.png" type="Texture" id=159]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/WalkBack/__Boxing02_WalkBack_009.png" type="Texture" id=160]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchRight/__Boxing02_PunchRight_000.png" type="Texture" id=161]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchUp/__Boxing02_PunchUp_006.png" type="Texture" id=162]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Walk/__Boxing02_Walk_004.png" type="Texture" id=163]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Idle/__Boxing02_Idle_006.png" type="Texture" id=164]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Walk/__Boxing02_Walk_005.png" type="Texture" id=165]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Idle/__Boxing02_Idle_008.png" type="Texture" id=166]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/KO/__Boxing02_KO_009.png" type="Texture" id=167]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Walk/__Boxing02_Walk_002.png" type="Texture" id=168]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/KO/__Boxing02_KO_008.png" type="Texture" id=169]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchRight/__Boxing02_PunchRight_005.png" type="Texture" id=170]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Walk/__Boxing02_Walk_003.png" type="Texture" id=171]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/KO/__Boxing02_KO_001.png" type="Texture" id=172]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/WalkBack/__Boxing02_WalkBack_004.png" type="Texture" id=173]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchLeft/__Boxing02_PunchLeft_004.png" type="Texture" id=174]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/KO/__Boxing02_KO_005.png" type="Texture" id=175]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchUp/__Boxing02_PunchUp_000.png" type="Texture" id=176]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/WalkBack/__Boxing02_WalkBack_003.png" type="Texture" id=177]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Hurt/__Boxing02_Hurt_001.png" type="Texture" id=178]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/KO/__Boxing02_KO_000.png" type="Texture" id=179]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Idle/__Boxing02_Idle_003.png" type="Texture" id=180]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Idle/__Boxing02_Idle_004.png" type="Texture" id=181]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/KO/__Boxing02_KO_006.png" type="Texture" id=182]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Walk/__Boxing02_Walk_006.png" type="Texture" id=183]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/KO/__Boxing02_KO_003.png" type="Texture" id=184]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/WalkBack/__Boxing02_WalkBack_008.png" type="Texture" id=185]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchLeft/__Boxing02_PunchLeft_002.png" type="Texture" id=186]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Hurt/__Boxing02_Hurt_002.png" type="Texture" id=187]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchUp/__Boxing02_PunchUp_001.png" type="Texture" id=188]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Walk/__Boxing02_Walk_000.png" type="Texture" id=189]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Idle/__Boxing02_Idle_009.png" type="Texture" id=190]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchUp/__Boxing02_PunchUp_003.png" type="Texture" id=191]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Idle/__Boxing02_Idle_005.png" type="Texture" id=192]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/KO/__Boxing02_KO_007.png" type="Texture" id=193]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/WalkBack/__Boxing02_WalkBack_001.png" type="Texture" id=194]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchLeft/__Boxing02_PunchLeft_005.png" type="Texture" id=195]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchLeft/__Boxing02_PunchLeft_003.png" type="Texture" id=196]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/WalkBack/__Boxing02_WalkBack_002.png" type="Texture" id=197]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchLeft/__Boxing02_PunchLeft_001.png" type="Texture" id=198]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Hurt/__Boxing02_Hurt_004.png" type="Texture" id=199]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchLeft/__Boxing02_PunchLeft_000.png" type="Texture" id=200]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/WalkBack/__Boxing02_WalkBack_007.png" type="Texture" id=201]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Idle/__Boxing02_Idle_002.png" type="Texture" id=202]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchUp/__Boxing02_PunchUp_004.png" type="Texture" id=203]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Hurt/__Boxing02_Hurt_007.png" type="Texture" id=204]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchRight/__Boxing02_PunchRight_004.png" type="Texture" id=205]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/KO/__Boxing02_KO_004.png" type="Texture" id=206]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchRight/__Boxing02_PunchRight_003.png" type="Texture" id=207]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/WalkBack/__Boxing02_WalkBack_006.png" type="Texture" id=208]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Idle/__Boxing02_Idle_000.png" type="Texture" id=209]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/WalkBack/__Boxing02_WalkBack_000.png" type="Texture" id=210]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/WalkBack/__Boxing02_WalkBack_005.png" type="Texture" id=211]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Walk/__Boxing02_Walk_001.png" type="Texture" id=212]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/PunchUp/__Boxing02_PunchUp_002.png" type="Texture" id=213]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchLeft/__Boxing03_PunchLeft_001.png" type="Texture" id=214]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchLeft/__Boxing03_PunchLeft_002.png" type="Texture" id=215]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchLeft/__Boxing01_PunchLeft_002.png" type="Texture" id=216]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/WalkBack/__Boxing01_WalkBack_009.png" type="Texture" id=217]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchUp/__Boxing01_PunchUp_003.png" type="Texture" id=218]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Idle/__Boxing01_Idle_006.png" type="Texture" id=219]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Hurt/__Boxing02_Hurt_006.png" type="Texture" id=220]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Idle/__Boxing01_Idle_001.png" type="Texture" id=221]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchRight/__Boxing01_PunchRight_005.png" type="Texture" id=222]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Idle/__Boxing01_Idle_008.png" type="Texture" id=223]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchUp/__Boxing01_PunchUp_000.png" type="Texture" id=224]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/KO/__Boxing01_KO_007.png" type="Texture" id=225]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchRight/__Boxing01_PunchRight_000.png" type="Texture" id=226]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Hurt/__Boxing01_Hurt_004.png" type="Texture" id=227]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Idle/__Boxing01_Idle_009.png" type="Texture" id=228]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/KO/__Boxing01_KO_003.png" type="Texture" id=229]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Hurt/__Boxing01_Hurt_006.png" type="Texture" id=230]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Walk/__Boxing01_Walk_000.png" type="Texture" id=231]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Walk/__Boxing02_Walk_009.png" type="Texture" id=232]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchLeft/__Boxing03_PunchLeft_000.png" type="Texture" id=233]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/KO/__Boxing01_KO_000.png" type="Texture" id=234]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Idle/__Boxing01_Idle_000.png" type="Texture" id=235]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchUp/__Boxing01_PunchUp_004.png" type="Texture" id=236]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchLeft/__Boxing03_PunchLeft_004.png" type="Texture" id=237]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Hurt/__Boxing01_Hurt_007.png" type="Texture" id=238]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/KO/__Boxing01_KO_006.png" type="Texture" id=239]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/KO/__Boxing01_KO_002.png" type="Texture" id=240]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchRight/__Boxing01_PunchRight_002.png" type="Texture" id=241]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchRight/__Boxing01_PunchRight_004.png" type="Texture" id=242]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchLeft/__Boxing03_PunchLeft_003.png" type="Texture" id=243]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchRight/__Boxing03_PunchRight_000.png" type="Texture" id=244]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Hurt/__Boxing01_Hurt_002.png" type="Texture" id=245]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/KO/__Boxing01_KO_001.png" type="Texture" id=246]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Walk/__Boxing02_Walk_007.png" type="Texture" id=247]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchLeft/__Boxing01_PunchLeft_001.png" type="Texture" id=248]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/KO/__Boxing01_KO_005.png" type="Texture" id=249]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Walk/__Boxing02_Walk_008.png" type="Texture" id=250]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchLeft/__Boxing03_PunchLeft_005.png" type="Texture" id=251]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchLeft/__Boxing01_PunchLeft_004.png" type="Texture" id=252]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchRight/__Boxing03_PunchRight_002.png" type="Texture" id=253]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/KO/__Boxing01_KO_008.png" type="Texture" id=254]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Hurt/__Boxing01_Hurt_000.png" type="Texture" id=255]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/KO/__Boxing01_KO_009.png" type="Texture" id=256]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Idle/__Boxing01_Idle_005.png" type="Texture" id=257]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Idle/__Boxing01_Idle_002.png" type="Texture" id=258]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchLeft/__Boxing01_PunchLeft_000.png" type="Texture" id=259]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Idle/__Boxing01_Idle_004.png" type="Texture" id=260]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchRight/__Boxing01_PunchRight_001.png" type="Texture" id=261]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/KO/__Boxing01_KO_004.png" type="Texture" id=262]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Idle/__Boxing01_Idle_007.png" type="Texture" id=263]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchRight/__Boxing01_PunchRight_003.png" type="Texture" id=264]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchLeft/__Boxing01_PunchLeft_003.png" type="Texture" id=265]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchLeft/__Boxing01_PunchLeft_005.png" type="Texture" id=266]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char02/BLUE/Hurt/__Boxing02_Hurt_000.png" type="Texture" id=267]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Idle/__Boxing01_Idle_003.png" type="Texture" id=268]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Hurt/__Boxing01_Hurt_001.png" type="Texture" id=269]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Hurt/__Boxing01_Hurt_005.png" type="Texture" id=270]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Walk/__Boxing01_Walk_002.png" type="Texture" id=271]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/WalkBack/__Boxing01_WalkBack_001.png" type="Texture" id=272]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Hurt/__Boxing01_Hurt_003.png" type="Texture" id=273]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/WalkBack/__Boxing01_WalkBack_008.png" type="Texture" id=274]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/WalkBack/__Boxing01_WalkBack_003.png" type="Texture" id=275]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Walk/__Boxing01_Walk_006.png" type="Texture" id=276]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchRight/__Boxing03_PunchRight_001.png" type="Texture" id=277]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/WalkBack/__Boxing01_WalkBack_007.png" type="Texture" id=278]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Walk/__Boxing01_Walk_009.png" type="Texture" id=279]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Walk/__Boxing01_Walk_001.png" type="Texture" id=280]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Walk/__Boxing01_Walk_005.png" type="Texture" id=281]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/WalkBack/__Boxing01_WalkBack_006.png" type="Texture" id=282]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/WalkBack/__Boxing01_WalkBack_005.png" type="Texture" id=283]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchUp/__Boxing01_PunchUp_001.png" type="Texture" id=284]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Walk/__Boxing01_Walk_004.png" type="Texture" id=285]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Walk/__Boxing01_Walk_003.png" type="Texture" id=286]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/WalkBack/__Boxing01_WalkBack_000.png" type="Texture" id=287]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Walk/__Boxing01_Walk_008.png" type="Texture" id=288]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Walk/__Boxing01_Walk_007.png" type="Texture" id=289]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/WalkBack/__Boxing01_WalkBack_002.png" type="Texture" id=290]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/KO/__Boxing06_KO_001.png" type="Texture" id=291]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Hurt/__Boxing06_Hurt_005.png" type="Texture" id=292]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchUp/__Boxing01_PunchUp_002.png" type="Texture" id=293]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Hurt/__Boxing06_Hurt_003.png" type="Texture" id=294]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Walk/__Boxing06_Walk_001.png" type="Texture" id=295]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchLeft/__Boxing06_PunchLeft_005.png" type="Texture" id=296]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Idle/__Boxing06_Idle_009.png" type="Texture" id=297]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Idle/__Boxing06_Idle_001.png" type="Texture" id=298]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchLeft/__Boxing06_PunchLeft_003.png" type="Texture" id=299]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchRight/__Boxing06_PunchRight_002.png" type="Texture" id=300]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/KO/__Boxing06_KO_008.png" type="Texture" id=301]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Idle/__Boxing06_Idle_005.png" type="Texture" id=302]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Idle/__Boxing06_Idle_008.png" type="Texture" id=303]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Walk/__Boxing06_Walk_009.png" type="Texture" id=304]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchRight/__Boxing06_PunchRight_003.png" type="Texture" id=305]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Walk/__Boxing06_Walk_000.png" type="Texture" id=306]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchLeft/__Boxing06_PunchLeft_001.png" type="Texture" id=307]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/KO/__Boxing06_KO_009.png" type="Texture" id=308]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/KO/__Boxing06_KO_003.png" type="Texture" id=309]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Blocking/__Boxing03_Blocking_001.png" type="Texture" id=310]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Idle/__Boxing06_Idle_007.png" type="Texture" id=311]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Blocking/__Boxing05_Blocking_006.png" type="Texture" id=312]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Blocking/__Boxing06_Blocking_002.png" type="Texture" id=313]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchLeft/__Boxing06_PunchLeft_002.png" type="Texture" id=314]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Hurt/__Boxing06_Hurt_002.png" type="Texture" id=315]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/KO/__Boxing06_KO_002.png" type="Texture" id=316]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/KO/__Boxing06_KO_000.png" type="Texture" id=317]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchRight/__Boxing06_PunchRight_004.png" type="Texture" id=318]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchLeft/__Boxing06_PunchLeft_004.png" type="Texture" id=319]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Idle/__Boxing06_Idle_003.png" type="Texture" id=320]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Walk/__Boxing06_Walk_004.png" type="Texture" id=321]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/WalkBack/__Boxing01_WalkBack_004.png" type="Texture" id=322]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Idle/__Boxing06_Idle_004.png" type="Texture" id=323]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Hurt/__Boxing06_Hurt_000.png" type="Texture" id=324]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Walk/__Boxing06_Walk_007.png" type="Texture" id=325]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Idle/__Boxing06_Idle_006.png" type="Texture" id=326]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Hurt/__Boxing06_Hurt_001.png" type="Texture" id=327]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Blocking/__Boxing01_Blocking_006.png" type="Texture" id=328]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Walk/__Boxing06_Walk_005.png" type="Texture" id=329]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchRight/__Boxing06_PunchRight_000.png" type="Texture" id=330]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Blocking/__Boxing03_Blocking_003.png" type="Texture" id=331]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchUp/__Boxing01_PunchUp_006.png" type="Texture" id=332]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Walk/__Boxing06_Walk_003.png" type="Texture" id=333]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Idle/__Boxing06_Idle_002.png" type="Texture" id=334]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Blocking/__Boxing05_Blocking_008.png" type="Texture" id=335]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/KO/__Boxing06_KO_006.png" type="Texture" id=336]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Walk/__Boxing06_Walk_008.png" type="Texture" id=337]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/KO/__Boxing06_KO_005.png" type="Texture" id=338]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/PunchUp/__Boxing01_PunchUp_005.png" type="Texture" id=339]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/KO/__Boxing06_KO_004.png" type="Texture" id=340]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Hurt/__Boxing06_Hurt_007.png" type="Texture" id=341]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/WalkBack/__Boxing06_WalkBack_009.png" type="Texture" id=342]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Walk/__Boxing06_Walk_006.png" type="Texture" id=343]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Hurt/__Boxing06_Hurt_004.png" type="Texture" id=344]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Walk/__Boxing06_Walk_002.png" type="Texture" id=345]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchRight/__Boxing06_PunchRight_001.png" type="Texture" id=346]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/WalkBack/__Boxing06_WalkBack_008.png" type="Texture" id=347]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Blocking/__Boxing01_Blocking_003.png" type="Texture" id=348]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Blocking/__Boxing06_Blocking_004.png" type="Texture" id=349]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchLeft/__Boxing06_PunchLeft_000.png" type="Texture" id=350]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/KO/__Boxing06_KO_007.png" type="Texture" id=351]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Idle/__Boxing06_Idle_000.png" type="Texture" id=352]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Hurt/__Boxing06_Hurt_006.png" type="Texture" id=353]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchRight/__Boxing06_PunchRight_005.png" type="Texture" id=354]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Blocking/__Boxing06_Blocking_001.png" type="Texture" id=355]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Hurt/__Boxing03_Hurt_006.png" type="Texture" id=356]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Idle/__Boxing03_Idle_001.png" type="Texture" id=357]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Blocking/__Boxing06_Blocking_000.png" type="Texture" id=358]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchRight/__Boxing03_PunchRight_005.png" type="Texture" id=359]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Idle/__Boxing03_Idle_008.png" type="Texture" id=360]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Blocking/__Boxing01_Blocking_004.png" type="Texture" id=361]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Blocking/__Boxing03_Blocking_005.png" type="Texture" id=362]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Blocking/__Boxing05_Blocking_004.png" type="Texture" id=363]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Blocking/__Boxing05_Blocking_003.png" type="Texture" id=364]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Idle/__Boxing03_Idle_000.png" type="Texture" id=365]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Hurt/__Boxing03_Hurt_004.png" type="Texture" id=366]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Blocking/__Boxing01_Blocking_007.png" type="Texture" id=367]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Blocking/__Boxing01_Blocking_001.png" type="Texture" id=368]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Blocking/__Boxing03_Blocking_009.png" type="Texture" id=369]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Blocking/__Boxing03_Blocking_006.png" type="Texture" id=370]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Hurt/__Boxing03_Hurt_003.png" type="Texture" id=371]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Idle/__Boxing03_Idle_005.png" type="Texture" id=372]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/WalkBack/__Boxing03_WalkBack_003.png" type="Texture" id=373]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Walk/__Boxing03_Walk_005.png" type="Texture" id=374]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Walk/__Boxing03_Walk_002.png" type="Texture" id=375]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Walk/__Boxing03_Walk_004.png" type="Texture" id=376]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Idle/__Boxing03_Idle_009.png" type="Texture" id=377]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchUp/__Boxing03_PunchUp_006.png" type="Texture" id=378]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Blocking/__Boxing01_Blocking_009.png" type="Texture" id=379]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/WalkBack/__Boxing03_WalkBack_002.png" type="Texture" id=380]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/KO/__Boxing03_KO_002.png" type="Texture" id=381]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchUp/__Boxing05_PunchUp_003.png" type="Texture" id=382]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Blocking/__Boxing03_Blocking_004.png" type="Texture" id=383]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Blocking/__Boxing03_Blocking_008.png" type="Texture" id=384]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Blocking/__Boxing05_Blocking_005.png" type="Texture" id=385]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Blocking/__Boxing05_Blocking_009.png" type="Texture" id=386]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Blocking/__Boxing06_Blocking_003.png" type="Texture" id=387]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Blocking/__Boxing06_Blocking_009.png" type="Texture" id=388]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Blocking/__Boxing01_Blocking_008.png" type="Texture" id=389]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchUp/__Boxing05_PunchUp_002.png" type="Texture" id=390]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Blocking/__Boxing01_Blocking_005.png" type="Texture" id=391]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchRight/__Boxing03_PunchRight_004.png" type="Texture" id=392]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/KO/__Boxing03_KO_008.png" type="Texture" id=393]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Idle/__Boxing03_Idle_003.png" type="Texture" id=394]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/WalkBack/__Boxing03_WalkBack_008.png" type="Texture" id=395]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Walk/__Boxing03_Walk_001.png" type="Texture" id=396]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Idle/__Boxing03_Idle_006.png" type="Texture" id=397]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Blocking/__Boxing06_Blocking_007.png" type="Texture" id=398]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Blocking/__Boxing03_Blocking_000.png" type="Texture" id=399]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Blocking/__Boxing03_Blocking_007.png" type="Texture" id=400]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Blocking/__Boxing05_Blocking_002.png" type="Texture" id=401]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Blocking/__Boxing06_Blocking_008.png" type="Texture" id=402]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Blocking/__Boxing06_Blocking_006.png" type="Texture" id=403]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Blocking/__Boxing05_Blocking_007.png" type="Texture" id=404]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Blocking/__Boxing01_Blocking_002.png" type="Texture" id=405]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Blocking/__Boxing03_Blocking_002.png" type="Texture" id=406]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Blocking/__Boxing05_Blocking_001.png" type="Texture" id=407]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Blocking/__Boxing05_Blocking_000.png" type="Texture" id=408]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Hurt/__Boxing03_Hurt_001.png" type="Texture" id=409]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchUp/__Boxing05_PunchUp_001.png" type="Texture" id=410]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Walk/__Boxing03_Walk_006.png" type="Texture" id=411]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchUp/__Boxing03_PunchUp_003.png" type="Texture" id=412]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/Blocking/__Boxing06_Blocking_005.png" type="Texture" id=413]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char01/BLUE/Blocking/__Boxing01_Blocking_000.png" type="Texture" id=414]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchUp/__Boxing03_PunchUp_004.png" type="Texture" id=415]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/KO/__Boxing03_KO_004.png" type="Texture" id=416]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/WalkBack/__Boxing03_WalkBack_007.png" type="Texture" id=417]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Idle/__Boxing03_Idle_002.png" type="Texture" id=418]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchUp/__Boxing05_PunchUp_004.png" type="Texture" id=419]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchUp/__Boxing05_PunchUp_000.png" type="Texture" id=420]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/KO/__Boxing03_KO_003.png" type="Texture" id=421]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/KO/__Boxing03_KO_000.png" type="Texture" id=422]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/KO/__Boxing03_KO_009.png" type="Texture" id=423]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Walk/__Boxing03_Walk_003.png" type="Texture" id=424]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/WalkBack/__Boxing03_WalkBack_000.png" type="Texture" id=425]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Hurt/__Boxing03_Hurt_005.png" type="Texture" id=426]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/WalkBack/__Boxing03_WalkBack_001.png" type="Texture" id=427]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Hurt/__Boxing03_Hurt_007.png" type="Texture" id=428]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Idle/__Boxing03_Idle_007.png" type="Texture" id=429]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Hurt/__Boxing03_Hurt_000.png" type="Texture" id=430]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/WalkBack/__Boxing03_WalkBack_006.png" type="Texture" id=431]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/WalkBack/__Boxing06_WalkBack_004.png" type="Texture" id=432]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchUp/__Boxing06_PunchUp_005.png" type="Texture" id=433]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/KO/__Boxing05_KO_006.png" type="Texture" id=434]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchUp/__Boxing06_PunchUp_004.png" type="Texture" id=435]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/WalkBack/__Boxing06_WalkBack_000.png" type="Texture" id=436]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/WalkBack/__Boxing06_WalkBack_002.png" type="Texture" id=437]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchUp/__Boxing06_PunchUp_000.png" type="Texture" id=438]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/WalkBack/__Boxing06_WalkBack_001.png" type="Texture" id=439]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/WalkBack/__Boxing05_WalkBack_006.png" type="Texture" id=440]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/WalkBack/__Boxing05_WalkBack_007.png" type="Texture" id=441]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchUp/__Boxing06_PunchUp_002.png" type="Texture" id=442]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/WalkBack/__Boxing06_WalkBack_005.png" type="Texture" id=443]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchUp/__Boxing06_PunchUp_001.png" type="Texture" id=444]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/KO/__Boxing05_KO_000.png" type="Texture" id=445]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchLeft/__Boxing05_PunchLeft_004.png" type="Texture" id=446]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchUp/__Boxing06_PunchUp_006.png" type="Texture" id=447]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/PunchUp/__Boxing06_PunchUp_003.png" type="Texture" id=448]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/WalkBack/__Boxing06_WalkBack_003.png" type="Texture" id=449]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/KO/__Boxing05_KO_007.png" type="Texture" id=450]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchUp/__Boxing05_PunchUp_005.png" type="Texture" id=451]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Walk/__Boxing05_Walk_009.png" type="Texture" id=452]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchUp/__Boxing03_PunchUp_000.png" type="Texture" id=453]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/KO/__Boxing05_KO_004.png" type="Texture" id=454]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Walk/__Boxing05_Walk_008.png" type="Texture" id=455]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchLeft/__Boxing05_PunchLeft_005.png" type="Texture" id=456]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchUp/__Boxing05_PunchUp_006.png" type="Texture" id=457]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/WalkBack/__Boxing05_WalkBack_002.png" type="Texture" id=458]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/WalkBack/__Boxing03_WalkBack_004.png" type="Texture" id=459]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchUp/__Boxing03_PunchUp_005.png" type="Texture" id=460]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/WalkBack/__Boxing03_WalkBack_009.png" type="Texture" id=461]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Walk/__Boxing03_Walk_007.png" type="Texture" id=462]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/WalkBack/__Boxing05_WalkBack_000.png" type="Texture" id=463]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/KO/__Boxing03_KO_001.png" type="Texture" id=464]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchUp/__Boxing03_PunchUp_001.png" type="Texture" id=465]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Walk/__Boxing03_Walk_009.png" type="Texture" id=466]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Walk/__Boxing05_Walk_006.png" type="Texture" id=467]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchRight/__Boxing05_PunchRight_001.png" type="Texture" id=468]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchLeft/__Boxing05_PunchLeft_003.png" type="Texture" id=469]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Idle/__Boxing05_Idle_001.png" type="Texture" id=470]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchRight/__Boxing05_PunchRight_003.png" type="Texture" id=471]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/WalkBack/__Boxing03_WalkBack_005.png" type="Texture" id=472]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Walk/__Boxing03_Walk_000.png" type="Texture" id=473]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Walk/__Boxing05_Walk_001.png" type="Texture" id=474]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Idle/__Boxing03_Idle_004.png" type="Texture" id=475]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchRight/__Boxing05_PunchRight_005.png" type="Texture" id=476]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Idle/__Boxing05_Idle_009.png" type="Texture" id=477]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchRight/__Boxing05_PunchRight_004.png" type="Texture" id=478]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/KO/__Boxing05_KO_005.png" type="Texture" id=479]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/KO/__Boxing05_KO_002.png" type="Texture" id=480]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/KO/__Boxing03_KO_007.png" type="Texture" id=481]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Hurt/__Boxing05_Hurt_002.png" type="Texture" id=482]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Walk/__Boxing03_Walk_008.png" type="Texture" id=483]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/KO/__Boxing03_KO_006.png" type="Texture" id=484]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchUp/__Boxing03_PunchUp_002.png" type="Texture" id=485]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchRight/__Boxing05_PunchRight_002.png" type="Texture" id=486]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchRight/__Boxing05_PunchRight_000.png" type="Texture" id=487]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/PunchRight/__Boxing03_PunchRight_003.png" type="Texture" id=488]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/KO/__Boxing03_KO_005.png" type="Texture" id=489]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Idle/__Boxing05_Idle_004.png" type="Texture" id=490]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Idle/__Boxing05_Idle_000.png" type="Texture" id=491]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/WalkBack/__Boxing06_WalkBack_007.png" type="Texture" id=492]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchLeft/__Boxing05_PunchLeft_002.png" type="Texture" id=493]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/WalkBack/__Boxing05_WalkBack_003.png" type="Texture" id=494]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Hurt/__Boxing05_Hurt_004.png" type="Texture" id=495]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Hurt/__Boxing05_Hurt_000.png" type="Texture" id=496]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Walk/__Boxing05_Walk_000.png" type="Texture" id=497]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/WalkBack/__Boxing05_WalkBack_001.png" type="Texture" id=498]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char03/BLUE/Hurt/__Boxing03_Hurt_002.png" type="Texture" id=499]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/KO/__Boxing05_KO_003.png" type="Texture" id=500]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Walk/__Boxing05_Walk_005.png" type="Texture" id=501]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Walk/__Boxing05_Walk_004.png" type="Texture" id=502]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Idle/__Boxing05_Idle_006.png" type="Texture" id=503]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Idle/__Boxing05_Idle_002.png" type="Texture" id=504]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Hurt/__Boxing05_Hurt_003.png" type="Texture" id=505]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char06/BLUE/WalkBack/__Boxing06_WalkBack_006.png" type="Texture" id=506]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/WalkBack/__Boxing05_WalkBack_005.png" type="Texture" id=507]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Walk/__Boxing05_Walk_002.png" type="Texture" id=508]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/KO/__Boxing05_KO_008.png" type="Texture" id=509]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/KO/__Boxing05_KO_009.png" type="Texture" id=510]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Idle/__Boxing05_Idle_007.png" type="Texture" id=511]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Idle/__Boxing05_Idle_003.png" type="Texture" id=512]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Walk/__Boxing05_Walk_007.png" type="Texture" id=513]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Idle/__Boxing05_Idle_008.png" type="Texture" id=514]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Hurt/__Boxing05_Hurt_006.png" type="Texture" id=515]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/KO/__Boxing05_KO_001.png" type="Texture" id=516]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Idle/__Boxing05_Idle_005.png" type="Texture" id=517]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchLeft/__Boxing05_PunchLeft_000.png" type="Texture" id=518]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/WalkBack/__Boxing05_WalkBack_009.png" type="Texture" id=519]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Hurt/__Boxing05_Hurt_005.png" type="Texture" id=520]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/WalkBack/__Boxing05_WalkBack_004.png" type="Texture" id=521]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Hurt/__Boxing05_Hurt_007.png" type="Texture" id=522]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Walk/__Boxing05_Walk_003.png" type="Texture" id=523]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/Hurt/__Boxing05_Hurt_001.png" type="Texture" id=524]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/WalkBack/__Boxing05_WalkBack_008.png" type="Texture" id=525]
+[ext_resource path="res://Level/Mini Boxing Sprite/Mini Boxing Sprites/PNG_/Char05/BLUE/PunchLeft/__Boxing05_PunchLeft_001.png" type="Texture" id=526]
+[ext_resource path="res://Main_Screen/Option_Button_math_fight/oie_HVnBcZ0PRWXy.png" type="Texture" id=527]
+[ext_resource path="res://Main_Screen/Option_Button_math_fight/oie_JrGe32hT3zoI.png" type="Texture" id=528]
+[ext_resource path="res://Main_Screen/Life Hacks.otf" type="DynamicFontData" id=529]
+[ext_resource path="res://Main_Screen/glove_bar.jpg" type="Texture" id=530]
+[ext_resource path="res://UI/fonts/Kenney Bold.ttf" type="DynamicFontData" id=531]
+[ext_resource path="res://Main_Screen/common_icon_golds.png" type="Texture" id=532]
+[ext_resource path="res://replay/unpressed.png" type="Texture" id=533]
+[ext_resource path="res://replay/pressed.png" type="Texture" id=534]
+[ext_resource path="res://admob-lib/admob.gd" type="Script" id=535]
+[ext_resource path="res://Main_Screen/ui_set/bord.png" type="Texture" id=536]
+[ext_resource path="res://Character/Win_or_loose/arrow_02_down.png" type="Texture" id=537]
+[ext_resource path="res://Character/Win_or_loose/CGB01-red_S_rounded_btn.png" type="Texture" id=538]
+[ext_resource path="res://Character/Win_or_loose/cross.png" type="Texture" id=539]
+[ext_resource path="res://Character/Win_or_loose/CGB01-blue_S_rounded_btn.png" type="Texture" id=540]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 56 ), ExtResource( 8 ), ExtResource( 48 ), ExtResource( 9 ), ExtResource( 66 ), ExtResource( 14 ), ExtResource( 21 ), ExtResource( 18 ), ExtResource( 65 ), ExtResource( 51 ), ExtResource( 22 ), ExtResource( 6 ) ],
+"loop": false,
+"name": "attack",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 78 ), ExtResource( 49 ), ExtResource( 69 ), ExtResource( 47 ), ExtResource( 67 ), ExtResource( 36 ), ExtResource( 55 ), ExtResource( 77 ), ExtResource( 52 ), ExtResource( 43 ) ],
+"loop": false,
+"name": "block",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 53 ), ExtResource( 64 ), ExtResource( 54 ), ExtResource( 72 ), ExtResource( 42 ), ExtResource( 44 ), ExtResource( 46 ), ExtResource( 40 ) ],
+"loop": false,
+"name": "hit",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 23 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 4 ), ExtResource( 31 ), ExtResource( 7 ), ExtResource( 38 ) ],
+"loop": true,
+"name": "idle",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 73 ), ExtResource( 50 ), ExtResource( 68 ), ExtResource( 75 ), ExtResource( 57 ), ExtResource( 34 ), ExtResource( 61 ), ExtResource( 45 ), ExtResource( 35 ), ExtResource( 58 ) ],
+"loop": false,
+"name": "loose",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 76 ), ExtResource( 15 ), ExtResource( 11 ), ExtResource( 60 ), ExtResource( 20 ), ExtResource( 5 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "walk_back",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 33 ), ExtResource( 2 ), ExtResource( 74 ), ExtResource( 16 ), ExtResource( 62 ), ExtResource( 32 ), ExtResource( 3 ), ExtResource( 30 ), ExtResource( 28 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "walk_forward",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 37 ), ExtResource( 41 ), ExtResource( 59 ), ExtResource( 63 ), ExtResource( 39 ), ExtResource( 70 ), ExtResource( 71 ) ],
+"loop": false,
+"name": "winner",
+"speed": 20.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 56 ), ExtResource( 8 ), ExtResource( 48 ), ExtResource( 9 ), ExtResource( 66 ), ExtResource( 14 ), ExtResource( 21 ), ExtResource( 18 ), ExtResource( 65 ), ExtResource( 51 ), ExtResource( 22 ), ExtResource( 6 ) ],
+"loop": false,
+"name": "attack",
+"speed": 30.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "block",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 53 ), ExtResource( 64 ), ExtResource( 54 ), ExtResource( 72 ), ExtResource( 42 ), ExtResource( 44 ), ExtResource( 46 ), ExtResource( 40 ) ],
+"loop": false,
+"name": "hit",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 23 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 4 ), ExtResource( 31 ), ExtResource( 7 ), ExtResource( 38 ) ],
+"loop": true,
+"name": "idle",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 73 ), ExtResource( 50 ), ExtResource( 68 ), ExtResource( 75 ), ExtResource( 57 ), ExtResource( 34 ), ExtResource( 61 ), ExtResource( 45 ), ExtResource( 35 ), ExtResource( 58 ) ],
+"loop": false,
+"name": "loose",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 76 ), ExtResource( 15 ), ExtResource( 11 ), ExtResource( 60 ), ExtResource( 20 ), ExtResource( 5 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "walk_back",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 33 ), ExtResource( 2 ), ExtResource( 74 ), ExtResource( 16 ), ExtResource( 62 ), ExtResource( 32 ), ExtResource( 3 ), ExtResource( 30 ), ExtResource( 28 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "walk_forward",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 37 ), ExtResource( 41 ), ExtResource( 59 ), ExtResource( 63 ), ExtResource( 39 ), ExtResource( 70 ), ExtResource( 71 ) ],
+"loop": true,
+"name": "winner",
+"speed": 20.0
+} ]
+
+[sub_resource type="DynamicFont" id=3]
+size = 50
+font_data = ExtResource( 81 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 112 ), ExtResource( 114 ), ExtResource( 111 ), ExtResource( 113 ), ExtResource( 115 ), ExtResource( 116 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 110 ), ExtResource( 93 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 83 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 82 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 99 ), ExtResource( 98 ), ExtResource( 100 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 101 ), ExtResource( 131 ), ExtResource( 139 ), ExtResource( 140 ), ExtResource( 132 ), ExtResource( 133 ), ExtResource( 134 ), ExtResource( 141 ), ExtResource( 135 ), ExtResource( 136 ), ExtResource( 127 ), ExtResource( 128 ), ExtResource( 137 ), ExtResource( 138 ), ExtResource( 129 ), ExtResource( 130 ), ExtResource( 142 ), ExtResource( 145 ), ExtResource( 144 ), ExtResource( 143 ), ExtResource( 104 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 109 ), ExtResource( 103 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 102 ), ExtResource( 123 ), ExtResource( 120 ), ExtResource( 121 ), ExtResource( 122 ), ExtResource( 124 ), ExtResource( 125 ), ExtResource( 126 ) ],
+"loop": true,
+"name": "default",
+"speed": 50.0
+} ]
+
+[sub_resource type="DynamicFont" id=5]
+size = 25
+font_data = ExtResource( 529 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 259 ), ExtResource( 248 ), ExtResource( 216 ), ExtResource( 265 ), ExtResource( 252 ), ExtResource( 266 ), ExtResource( 226 ), ExtResource( 261 ), ExtResource( 241 ), ExtResource( 264 ), ExtResource( 242 ), ExtResource( 222 ) ],
+"loop": true,
+"name": "attack",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 414 ), ExtResource( 368 ), ExtResource( 405 ), ExtResource( 348 ), ExtResource( 361 ), ExtResource( 391 ), ExtResource( 328 ), ExtResource( 367 ), ExtResource( 389 ), ExtResource( 379 ) ],
+"loop": false,
+"name": "block",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 255 ), ExtResource( 269 ), ExtResource( 245 ), ExtResource( 273 ), ExtResource( 227 ), ExtResource( 270 ), ExtResource( 230 ), ExtResource( 238 ) ],
+"loop": false,
+"name": "hit",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 235 ), ExtResource( 221 ), ExtResource( 258 ), ExtResource( 268 ), ExtResource( 260 ), ExtResource( 257 ), ExtResource( 219 ), ExtResource( 263 ), ExtResource( 223 ), ExtResource( 228 ) ],
+"loop": true,
+"name": "idle",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 234 ), ExtResource( 246 ), ExtResource( 240 ), ExtResource( 229 ), ExtResource( 262 ), ExtResource( 249 ), ExtResource( 239 ), ExtResource( 225 ), ExtResource( 254 ), ExtResource( 256 ) ],
+"loop": false,
+"name": "loose",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 287 ), ExtResource( 272 ), ExtResource( 290 ), ExtResource( 275 ), ExtResource( 322 ), ExtResource( 283 ), ExtResource( 282 ), ExtResource( 278 ), ExtResource( 274 ), ExtResource( 217 ) ],
+"loop": true,
+"name": "walk_back",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 231 ), ExtResource( 280 ), ExtResource( 271 ), ExtResource( 286 ), ExtResource( 285 ), ExtResource( 281 ), ExtResource( 276 ), ExtResource( 289 ), ExtResource( 288 ), ExtResource( 279 ) ],
+"loop": true,
+"name": "walk_forward",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 224 ), ExtResource( 284 ), ExtResource( 293 ), ExtResource( 218 ), ExtResource( 236 ), ExtResource( 339 ), ExtResource( 332 ) ],
+"loop": false,
+"name": "winner",
+"speed": 20.0
+} ]
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ ExtResource( 200 ), ExtResource( 198 ), ExtResource( 186 ), ExtResource( 196 ), ExtResource( 174 ), ExtResource( 195 ), ExtResource( 161 ), ExtResource( 155 ), ExtResource( 154 ), ExtResource( 207 ), ExtResource( 205 ), ExtResource( 170 ) ],
+"loop": false,
+"name": "attack",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 414 ), ExtResource( 368 ), ExtResource( 405 ), ExtResource( 348 ), ExtResource( 361 ), ExtResource( 391 ), ExtResource( 328 ), ExtResource( 367 ), ExtResource( 389 ), ExtResource( 379 ) ],
+"loop": true,
+"name": "block",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 267 ), ExtResource( 178 ), ExtResource( 187 ), ExtResource( 158 ), ExtResource( 199 ), ExtResource( 156 ), ExtResource( 220 ), ExtResource( 204 ) ],
+"loop": false,
+"name": "hit",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 209 ), ExtResource( 153 ), ExtResource( 202 ), ExtResource( 180 ), ExtResource( 181 ), ExtResource( 192 ), ExtResource( 164 ), ExtResource( 159 ), ExtResource( 166 ), ExtResource( 190 ) ],
+"loop": true,
+"name": "idle",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 179 ), ExtResource( 172 ), ExtResource( 157 ), ExtResource( 184 ), ExtResource( 206 ), ExtResource( 175 ), ExtResource( 182 ), ExtResource( 193 ), ExtResource( 169 ), ExtResource( 167 ) ],
+"loop": false,
+"name": "loose",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 210 ), ExtResource( 194 ), ExtResource( 197 ), ExtResource( 177 ), ExtResource( 173 ), ExtResource( 211 ), ExtResource( 208 ), ExtResource( 201 ), ExtResource( 185 ), ExtResource( 160 ) ],
+"loop": true,
+"name": "walk_back",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 189 ), ExtResource( 212 ), ExtResource( 168 ), ExtResource( 171 ), ExtResource( 163 ), ExtResource( 165 ), ExtResource( 183 ), ExtResource( 247 ), ExtResource( 250 ), ExtResource( 232 ) ],
+"loop": true,
+"name": "walk_forward",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 176 ), ExtResource( 188 ), ExtResource( 213 ), ExtResource( 191 ), ExtResource( 203 ), ExtResource( 152 ), ExtResource( 162 ) ],
+"loop": false,
+"name": "winner",
+"speed": 20.0
+} ]
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ ExtResource( 56 ), ExtResource( 8 ), ExtResource( 48 ), ExtResource( 9 ), ExtResource( 66 ), ExtResource( 14 ), ExtResource( 21 ), ExtResource( 18 ), ExtResource( 65 ), ExtResource( 51 ), ExtResource( 22 ), ExtResource( 6 ) ],
+"loop": false,
+"name": "attack",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 78 ), ExtResource( 49 ), ExtResource( 69 ), ExtResource( 47 ), ExtResource( 67 ), ExtResource( 36 ), ExtResource( 55 ), ExtResource( 77 ), ExtResource( 52 ), ExtResource( 43 ) ],
+"loop": false,
+"name": "block",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 53 ), ExtResource( 64 ), ExtResource( 54 ), ExtResource( 72 ), ExtResource( 42 ), ExtResource( 44 ), ExtResource( 46 ), ExtResource( 40 ) ],
+"loop": false,
+"name": "hit",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 23 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 4 ), ExtResource( 31 ), ExtResource( 7 ), ExtResource( 38 ) ],
+"loop": true,
+"name": "idle",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 73 ), ExtResource( 50 ), ExtResource( 68 ), ExtResource( 75 ), ExtResource( 57 ), ExtResource( 34 ), ExtResource( 61 ), ExtResource( 45 ), ExtResource( 35 ), ExtResource( 58 ) ],
+"loop": false,
+"name": "loose ",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 76 ), ExtResource( 15 ), ExtResource( 11 ), ExtResource( 60 ), ExtResource( 20 ), ExtResource( 5 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "walk_back",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 33 ), ExtResource( 2 ), ExtResource( 74 ), ExtResource( 16 ), ExtResource( 62 ), ExtResource( 32 ), ExtResource( 3 ), ExtResource( 30 ), ExtResource( 28 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "walk_forward",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 37 ), ExtResource( 41 ), ExtResource( 59 ), ExtResource( 63 ), ExtResource( 39 ), ExtResource( 70 ), ExtResource( 71 ) ],
+"loop": false,
+"name": "winner",
+"speed": 20.0
+} ]
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ ExtResource( 233 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 243 ), ExtResource( 237 ), ExtResource( 251 ), ExtResource( 244 ), ExtResource( 277 ), ExtResource( 253 ), ExtResource( 488 ), ExtResource( 392 ), ExtResource( 359 ) ],
+"loop": false,
+"name": "attack",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 399 ), ExtResource( 310 ), ExtResource( 406 ), ExtResource( 331 ), ExtResource( 383 ), ExtResource( 362 ), ExtResource( 370 ), ExtResource( 400 ), ExtResource( 384 ), ExtResource( 369 ) ],
+"loop": false,
+"name": "block",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 430 ), ExtResource( 409 ), ExtResource( 499 ), ExtResource( 371 ), ExtResource( 366 ), ExtResource( 426 ), ExtResource( 356 ), ExtResource( 428 ) ],
+"loop": false,
+"name": "hit",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 365 ), ExtResource( 357 ), ExtResource( 418 ), ExtResource( 394 ), ExtResource( 475 ), ExtResource( 372 ), ExtResource( 397 ), ExtResource( 429 ), ExtResource( 360 ), ExtResource( 377 ) ],
+"loop": true,
+"name": "idle",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 422 ), ExtResource( 464 ), ExtResource( 381 ), ExtResource( 421 ), ExtResource( 416 ), ExtResource( 489 ), ExtResource( 484 ), ExtResource( 481 ), ExtResource( 393 ), ExtResource( 423 ) ],
+"loop": false,
+"name": "loose",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 425 ), ExtResource( 427 ), ExtResource( 380 ), ExtResource( 373 ), ExtResource( 459 ), ExtResource( 472 ), ExtResource( 431 ), ExtResource( 417 ), ExtResource( 395 ), ExtResource( 461 ) ],
+"loop": true,
+"name": "walk_back",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 473 ), ExtResource( 396 ), ExtResource( 375 ), ExtResource( 424 ), ExtResource( 376 ), ExtResource( 374 ), ExtResource( 411 ), ExtResource( 462 ), ExtResource( 483 ), ExtResource( 466 ) ],
+"loop": true,
+"name": "walk_forward",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 453 ), ExtResource( 465 ), ExtResource( 485 ), ExtResource( 412 ), ExtResource( 415 ), ExtResource( 460 ), ExtResource( 378 ) ],
+"loop": false,
+"name": "winner",
+"speed": 20.0
+} ]
+
+[sub_resource type="SpriteFrames" id=10]
+animations = [ {
+"frames": [ ExtResource( 518 ), ExtResource( 526 ), ExtResource( 493 ), ExtResource( 469 ), ExtResource( 446 ), ExtResource( 456 ), ExtResource( 487 ), ExtResource( 468 ), ExtResource( 486 ), ExtResource( 471 ), ExtResource( 478 ), ExtResource( 476 ) ],
+"loop": false,
+"name": "attack",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 408 ), ExtResource( 407 ), ExtResource( 401 ), ExtResource( 364 ), ExtResource( 363 ), ExtResource( 385 ), ExtResource( 312 ), ExtResource( 404 ), ExtResource( 335 ), ExtResource( 386 ) ],
+"loop": false,
+"name": "block",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 496 ), ExtResource( 524 ), ExtResource( 482 ), ExtResource( 505 ), ExtResource( 495 ), ExtResource( 520 ), ExtResource( 515 ), ExtResource( 522 ) ],
+"loop": false,
+"name": "hit",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 491 ), ExtResource( 470 ), ExtResource( 504 ), ExtResource( 512 ), ExtResource( 490 ), ExtResource( 517 ), ExtResource( 503 ), ExtResource( 511 ), ExtResource( 514 ), ExtResource( 477 ) ],
+"loop": true,
+"name": "idle",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 445 ), ExtResource( 516 ), ExtResource( 480 ), ExtResource( 500 ), ExtResource( 454 ), ExtResource( 479 ), ExtResource( 434 ), ExtResource( 450 ), ExtResource( 509 ), ExtResource( 510 ) ],
+"loop": false,
+"name": "loose",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 497 ), ExtResource( 474 ), ExtResource( 508 ), ExtResource( 523 ), ExtResource( 502 ), ExtResource( 501 ), ExtResource( 467 ), ExtResource( 513 ), ExtResource( 455 ), ExtResource( 452 ) ],
+"loop": true,
+"name": "walk_back",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 463 ), ExtResource( 498 ), ExtResource( 458 ), ExtResource( 494 ), ExtResource( 521 ), ExtResource( 507 ), ExtResource( 440 ), ExtResource( 441 ), ExtResource( 525 ), ExtResource( 519 ) ],
+"loop": true,
+"name": "walk_forward",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 420 ), ExtResource( 410 ), ExtResource( 390 ), ExtResource( 382 ), ExtResource( 419 ), ExtResource( 451 ), ExtResource( 457 ) ],
+"loop": false,
+"name": "winner",
+"speed": 20.0
+} ]
+
+[sub_resource type="SpriteFrames" id=11]
+animations = [ {
+"frames": [ ExtResource( 350 ), ExtResource( 307 ), ExtResource( 314 ), ExtResource( 299 ), ExtResource( 319 ), ExtResource( 296 ), ExtResource( 330 ), ExtResource( 346 ), ExtResource( 300 ), ExtResource( 305 ), ExtResource( 318 ), ExtResource( 354 ) ],
+"loop": false,
+"name": "attack",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 358 ), ExtResource( 355 ), ExtResource( 313 ), ExtResource( 387 ), ExtResource( 349 ), ExtResource( 413 ), ExtResource( 403 ), ExtResource( 398 ), ExtResource( 402 ), ExtResource( 388 ) ],
+"loop": false,
+"name": "block",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 324 ), ExtResource( 327 ), ExtResource( 315 ), ExtResource( 294 ), ExtResource( 344 ), ExtResource( 292 ), ExtResource( 353 ), ExtResource( 341 ) ],
+"loop": false,
+"name": "hit",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 352 ), ExtResource( 298 ), ExtResource( 334 ), ExtResource( 320 ), ExtResource( 323 ), ExtResource( 302 ), ExtResource( 326 ), ExtResource( 311 ), ExtResource( 303 ), ExtResource( 297 ) ],
+"loop": true,
+"name": "idle",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 317 ), ExtResource( 291 ), ExtResource( 316 ), ExtResource( 309 ), ExtResource( 340 ), ExtResource( 338 ), ExtResource( 336 ), ExtResource( 351 ), ExtResource( 301 ), ExtResource( 308 ) ],
+"loop": false,
+"name": "loose",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 436 ), ExtResource( 439 ), ExtResource( 437 ), ExtResource( 449 ), ExtResource( 432 ), ExtResource( 443 ), ExtResource( 506 ), ExtResource( 492 ), ExtResource( 347 ), ExtResource( 342 ) ],
+"loop": true,
+"name": "walk_back",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 306 ), ExtResource( 295 ), ExtResource( 345 ), ExtResource( 333 ), ExtResource( 321 ), ExtResource( 329 ), ExtResource( 343 ), ExtResource( 325 ), ExtResource( 337 ), ExtResource( 304 ) ],
+"loop": true,
+"name": "walk_forward",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 438 ), ExtResource( 444 ), ExtResource( 442 ), ExtResource( 448 ), ExtResource( 435 ), ExtResource( 433 ), ExtResource( 447 ) ],
+"loop": true,
+"name": "winner",
+"speed": 20.0
+} ]
+
+[sub_resource type="DynamicFont" id=12]
+size = 50
+font_data = ExtResource( 531 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 12
+font_data = ExtResource( 81 )
+
+[sub_resource type="DynamicFont" id=14]
+font_data = ExtResource( 81 )
+
+[sub_resource type="DynamicFont" id=17]
+font_data = ExtResource( 531 )
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0.933333, 0.027451, 0.027451, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 5
+border_width_bottom = 3
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 0, 0.0705882, 0.952941, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+shadow_size = 7
+
+[node name="Win_Loser_Annoucement" type="Node2D"]
+position = Vector2( -28.3162, -5.66323 )
+script = ExtResource( 1 )
+
+[node name="crown" type="Sprite" parent="."]
+position = Vector2( 674.344, 75.4112 )
+scale = Vector2( 0.28, 0.28 )
+texture = ExtResource( 146 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="pressure_timer" type="Timer" parent="crown"]
+
+[node name="Decision_Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="P" type="Position2D" parent="."]
+position = Vector2( 280, 200 )
+
+[node name="E" type="Position2D" parent="."]
+position = Vector2( 630, 373 )
+
+[node name="Player" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 224.76, 306.227 )
+scale = Vector2( 0.9, 0.9 )
+frames = SubResource( 1 )
+animation = "loose"
+frame = 9
+playing = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Enemy" type="AnimatedSprite" parent="."]
+visible = false
+modulate = Color( 1, 0.380392, 0.380392, 1 )
+position = Vector2( 673.79, 305.834 )
+scale = Vector2( 0.9, 0.9 )
+frames = SubResource( 2 )
+animation = "winner"
+playing = true
+flip_h = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Tween2" type="Tween" parent="."]
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="winner" type="Sprite" parent="."]
+position = Vector2( 273.752, 160.95 )
+scale = Vector2( 0.48452, 0.584381 )
+texture = ExtResource( 79 )
+
+[node name="Label" type="Label" parent="winner"]
+margin_left = -158.599
+margin_top = -54.22
+margin_right = 175.401
+margin_bottom = 46.78
+custom_colors/font_color = Color( 0.992157, 0.72549, 0.0235294, 1 )
+custom_colors/font_outline_modulate = Color( 0.894118, 0.454902, 0.454902, 1 )
+custom_colors/font_color_shadow = Color( 0.635294, 0.0627451, 0.0627451, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/line_spacing = 5
+custom_constants/shadow_offset_y = 5
+custom_constants/shadow_as_outline = 5
+custom_fonts/font = SubResource( 3 )
+text = "WINNER"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="loser" type="Sprite" parent="."]
+position = Vector2( 684.028, 161.356 )
+scale = Vector2( 0.522676, 0.557986 )
+texture = ExtResource( 80 )
+
+[node name="Label" type="Label" parent="loser"]
+margin_left = -158.599
+margin_top = -54.22
+margin_right = 175.401
+margin_bottom = 46.78
+custom_colors/font_color = Color( 0.0941176, 0.780392, 0.168627, 1 )
+custom_colors/font_outline_modulate = Color( 0.894118, 0.454902, 0.454902, 1 )
+custom_colors/font_color_shadow = Color( 0.243137, 0.298039, 0.6, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/line_spacing = 5
+custom_constants/shadow_offset_y = 5
+custom_constants/shadow_as_outline = 5
+custom_fonts/font = SubResource( 3 )
+text = "LOSER"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="confetti" type="Node2D" parent="."]
+position = Vector2( 417.192, -1.88776 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="one" type="AnimatedSprite" parent="confetti"]
+position = Vector2( 299.694, 635.215 )
+frames = SubResource( 4 )
+frame = 41
+playing = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="two" type="AnimatedSprite" parent="confetti"]
+position = Vector2( 471.434, 505.108 )
+rotation = -0.785398
+frames = SubResource( 4 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="three" type="AnimatedSprite" parent="confetti"]
+position = Vector2( 89.7969, 511.843 )
+rotation = 0.785398
+frames = SubResource( 4 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="four" type="AnimatedSprite" parent="confetti"]
+position = Vector2( 115.153, 84.9487 )
+rotation = -0.785398
+frames = SubResource( 4 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="five" type="AnimatedSprite" parent="confetti"]
+position = Vector2( 430.407, 83.061 )
+rotation = 0.785398
+frames = SubResource( 4 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="confetti_sound" type="AudioStreamPlayer2D" parent="confetti"]
+stream = ExtResource( 151 )
+
+[node name="Tween3" type="Tween" parent="."]
+
+[node name="Winner_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 148 )
+volume_db = 6.108
+
+[node name="Loser_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 147 )
+
+[node name="Cheering_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 149 )
+
+[node name="disappointed_crowd" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 150 )
+
+[node name="Button" type="TouchScreenButton" parent="."]
+position = Vector2( 142.828, 471.198 )
+scale = Vector2( 1.7, 1.7 )
+normal = ExtResource( 527 )
+pressed = ExtResource( 528 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Button"]
+margin_left = 3.92599
+margin_top = 1.5704
+margin_right = 125.926
+margin_bottom = 61.5704
+custom_fonts/font = SubResource( 5 )
+text = "go back"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="p_skins" type="Node2D" parent="."]
+position = Vector2( 250, 396 )
+scale = Vector2( 1.2, 1.2 )
+__meta__ = {
+"_edit_group_": true,
+"_editor_description_": ""
+}
+
+[node name="blake" type="AnimatedSprite" parent="p_skins"]
+visible = false
+position = Vector2( -30.929, -65.5206 )
+scale = Vector2( 0.758, 0.762 )
+frames = SubResource( 6 )
+animation = "attack"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="mathieux" type="AnimatedSprite" parent="p_skins"]
+visible = false
+position = Vector2( -32.1, -62.42 )
+scale = Vector2( 0.733, 0.764 )
+frames = SubResource( 7 )
+animation = "attack"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="vince" type="AnimatedSprite" parent="p_skins"]
+visible = false
+position = Vector2( -32.1086, -62.4273 )
+scale = Vector2( 0.75781, 0.761913 )
+frames = SubResource( 8 )
+animation = "winner"
+frame = 6
+playing = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="brook" type="AnimatedSprite" parent="p_skins"]
+visible = false
+position = Vector2( -32.1, -62.42 )
+scale = Vector2( 0.758, 0.762 )
+frames = SubResource( 9 )
+animation = "attack"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="fernando" type="AnimatedSprite" parent="p_skins"]
+visible = false
+position = Vector2( -32.1, -62.42 )
+scale = Vector2( 0.758, 0.762 )
+frames = SubResource( 10 )
+animation = "attack"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="devo" type="AnimatedSprite" parent="p_skins"]
+visible = false
+position = Vector2( -32.1, -62.42 )
+scale = Vector2( 0.758, 0.762 )
+frames = SubResource( 11 )
+animation = "attack"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="e_skins" type="Node2D" parent="."]
+position = Vector2( 764.032, 402.991 )
+scale = Vector2( 1.125, 1.125 )
+__meta__ = {
+"_edit_group_": true,
+"_editor_description_": ""
+}
+
+[node name="blake" type="AnimatedSprite" parent="e_skins"]
+visible = false
+position = Vector2( -30.929, -65.5206 )
+scale = Vector2( 0.758, 0.762 )
+frames = SubResource( 6 )
+animation = "attack"
+flip_h = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="mathieux" type="AnimatedSprite" parent="e_skins"]
+visible = false
+position = Vector2( -32.1, -62.42 )
+scale = Vector2( 0.733, 0.764 )
+frames = SubResource( 7 )
+animation = "attack"
+flip_h = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="vince" type="AnimatedSprite" parent="e_skins"]
+visible = false
+position = Vector2( -32.1086, -62.4273 )
+scale = Vector2( 0.75781, 0.761913 )
+frames = SubResource( 8 )
+animation = "winner"
+frame = 6
+playing = true
+flip_h = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="brook" type="AnimatedSprite" parent="e_skins"]
+visible = false
+position = Vector2( -32.1, -62.42 )
+scale = Vector2( 0.758, 0.762 )
+frames = SubResource( 9 )
+animation = "attack"
+flip_h = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="fernando" type="AnimatedSprite" parent="e_skins"]
+visible = false
+position = Vector2( -32.1, -62.42 )
+scale = Vector2( 0.758, 0.762 )
+frames = SubResource( 10 )
+animation = "attack"
+flip_h = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="devo" type="AnimatedSprite" parent="e_skins"]
+visible = false
+position = Vector2( -32.1, -62.42 )
+scale = Vector2( 0.758, 0.762 )
+frames = SubResource( 11 )
+animation = "attack"
+flip_h = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 873, 0 )
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
+margin_left = -2.76373
+margin_top = -0.654602
+margin_right = 1963.24
+margin_bottom = 586.345
+texture = ExtResource( 530 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 144.769
+margin_top = 34.009
+margin_right = 354.769
+margin_bottom = 145.009
+rect_rotation = -5.4
+custom_colors/font_color = Color( 0.0352941, 0.329412, 0.713726, 1 )
+custom_colors/font_color_shadow = Color( 0.917647, 0.607843, 0.0313726, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/shadow_offset_y = 5
+custom_constants/shadow_as_outline = 5
+custom_fonts/font = SubResource( 12 )
+text = "200"
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="common_icon_golds" type="Sprite" parent="Label"]
+position = Vector2( -48.0593, 34.5517 )
+scale = Vector2( 0.692874, 0.813844 )
+texture = ExtResource( 532 )
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 45.0
+margin_top = 25.0
+margin_right = 569.0
+margin_bottom = 309.0
+custom_fonts/font = SubResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Replay" type="TouchScreenButton" parent="."]
+position = Vector2( 362, 486 )
+scale = Vector2( 1.5, 1.5 )
+normal = ExtResource( 533 )
+pressed = ExtResource( 534 )
+
+[node name="Label" type="Label" parent="Replay"]
+margin_top = 48.6667
+margin_right = 66.0
+margin_bottom = 60.6667
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 1, 0.0352941, 0.796078, 1 )
+custom_colors/font_color_shadow = Color( 0.184314, 0.0588235, 0.611765, 1 )
+custom_fonts/font = SubResource( 13 )
+text = "replay"
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="add" type="Node2D" parent="."]
+
+[node name="bord" type="Sprite" parent="add"]
+position = Vector2( 526.041, 305.066 )
+scale = Vector2( 0.390116, 0.3 )
+texture = ExtResource( 536 )
+
+[node name="Label" type="Label" parent="add"]
+margin_left = 231.622
+margin_top = 158.704
+margin_right = 831.622
+margin_bottom = 264.704
+custom_colors/font_color = Color( 0.968627, 0.968627, 0.968627, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.0745098, 0.0156863, 0.0156863, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "Please consider watching 
+a video to support the 
+developper of the
+ game "
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="yes" type="TouchScreenButton" parent="add"]
+position = Vector2( 369.29, 253.115 )
+normal = ExtResource( 540 )
+
+[node name="arrow_02_down" type="Sprite" parent="add/yes"]
+position = Vector2( 59.4136, 69.9586 )
+scale = Vector2( 0.850923, 0.929846 )
+texture = ExtResource( 537 )
+
+[node name="no" type="TouchScreenButton" parent="add"]
+position = Vector2( 555.619, 253.115 )
+normal = ExtResource( 538 )
+
+[node name="cross" type="Sprite" parent="add/no"]
+position = Vector2( 66.1483, 62.6626 )
+scale = Vector2( 0.850923, 0.929846 )
+texture = ExtResource( 539 )
+
+[node name="AdMob" type="Node" parent="add"]
+script = ExtResource( 535 )
+is_real = true
+rewarded_id = "ca-app-pub-6162036726133653/1873495505"
+
+[node name="ProgressBar" type="ProgressBar" parent="add"]
+margin_left = 399.0
+margin_top = 402.0
+margin_right = 638.0
+margin_bottom = 470.0
+custom_fonts/font = SubResource( 17 )
+custom_styles/fg = SubResource( 15 )
+custom_styles/bg = SubResource( 16 )
+max_value = 5.0
+step = 0.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="timeout" from="crown/pressure_timer" to="." method="_on_pressure_timer_timeout"]
+[connection signal="timeout" from="Decision_Timer" to="." method="_on_Decision_Timer_timeout"]
+[connection signal="animation_finished" from="confetti/one" to="." method="_on_one_animation_finished"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Replay" to="." method="_on_TouchScreenButton_pressed"]
+[connection signal="pressed" from="add/yes" to="." method="_on_yes_pressed"]
+[connection signal="pressed" from="add/no" to="." method="_on_no_pressed"]
+[connection signal="rewarded_video_closed" from="add/AdMob" to="." method="_on_AdMob_rewarded_video_closed"]

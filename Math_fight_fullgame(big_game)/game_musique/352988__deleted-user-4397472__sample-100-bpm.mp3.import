@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/352988__deleted-user-4397472__sample-100-bpm.mp3-e18817675389241c1ae587085e969238.mp3str"
+
+[deps]
+
+source_file="res://game_musique/352988__deleted-user-4397472__sample-100-bpm.mp3"
+dest_files=[ "res://.import/352988__deleted-user-4397472__sample-100-bpm.mp3-e18817675389241c1ae587085e969238.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

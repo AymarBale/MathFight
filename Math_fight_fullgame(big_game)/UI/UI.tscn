@@ -1,0 +1,385 @@
+[gd_scene load_steps=34 format=2]
+
+[ext_resource path="res://UI/paper_ui/paper_panel_2200_x_181.png" type="Texture" id=1]
+[ext_resource path="res://UI/PaperUIKit/Pngs/RedButton.png" type="Texture" id=2]
+[ext_resource path="res://UI/paper_ui/paper_panel_242_x_240.png" type="Texture" id=3]
+[ext_resource path="res://UI/boxing_gloves_050.png" type="Texture" id=4]
+[ext_resource path="res://UI/slice35.png" type="Texture" id=5]
+[ext_resource path="res://UI/PaperUIKit/Pngs/BlueButton.png" type="Texture" id=6]
+[ext_resource path="res://UI/slice33.png" type="Texture" id=7]
+[ext_resource path="res://UI/fonts/GravityBold8.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://UI/UI.gd" type="Script" id=9]
+[ext_resource path="res://UI/camera_settings/Camera_setting.gd" type="Script" id=10]
+[ext_resource path="res://UI/Sparkle_effect/sparkle_spawn.tscn" type="PackedScene" id=11]
+[ext_resource path="res://UI/Chosing_options/Choosing_option.gd" type="Script" id=12]
+[ext_resource path="res://UI/pointing arrows/pointing_arrow.tscn" type="PackedScene" id=13]
+[ext_resource path="res://UI/True_and_False/True_and_False.tscn" type="PackedScene" id=14]
+[ext_resource path="res://UI/Health_bar/Health_bar.tscn" type="PackedScene" id=15]
+[ext_resource path="res://UI/BM.gd" type="Script" id=16]
+[ext_resource path="res://Main_Screen/TYPE/ezgif-2-4ba129ef57de-png-73x78-sprite-png/tile018.png" type="Texture" id=17]
+[ext_resource path="res://UI/new_rage_bar/_new_rage_bar.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Main_Screen/Option_Button_math_fight/oie_HVnBcZ0PRWXy.png" type="Texture" id=19]
+[ext_resource path="res://Main_Screen/Option_Button_math_fight/oie_JrGe32hT3zoI.png" type="Texture" id=20]
+[ext_resource path="res://Main_Screen/TYPE/ezgif-2-5e1af634bd60-png-73x78-sprite-png/tile018.png" type="Texture" id=21]
+[ext_resource path="res://Main_Screen/buttons_sound/Clic07.mp3.wav" type="AudioStream" id=22]
+[ext_resource path="res://Main_Screen/buttons_sound/button02.mp3.wav" type="AudioStream" id=23]
+[ext_resource path="res://Main_Screen/buttons_sound/Clic08.mp3.wav" type="AudioStream" id=24]
+[ext_resource path="res://UI/single_bounce.wav" type="AudioStream" id=25]
+[ext_resource path="res://Level/boxing-match-bell-ding-crowd-cheering-foley-sfx-sound-effect.mp3" type="AudioStream" id=26]
+[ext_resource path="res://Level/mixkit-clapping-male-crowd-439.wav" type="AudioStream" id=27]
+[ext_resource path="res://Main_Screen/TYPE/ezgif-2-4ba129ef57de-png-73x78-sprite-png/tile030.png" type="Texture" id=28]
+[ext_resource path="res://Main_Screen/TYPE/ezgif-2-5e1af634bd60-png-73x78-sprite-png/tile030.png" type="Texture" id=29]
+
+[sub_resource type="DynamicFont" id=1]
+size = 26
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 8 )
+
+[node name="UI" type="Node2D"]
+script = ExtResource( 9 )
+
+[node name="Rage_bar" type="Node2D" parent="."]
+
+[node name="rage_bar" parent="Rage_bar" instance=ExtResource( 18 )]
+visible = false
+
+[node name="Camera_setting" type="Node2D" parent="."]
+script = ExtResource( 10 )
+
+[node name="Camera2D" type="Camera2D" parent="Camera_setting"]
+position = Vector2( 432.872, 290.167 )
+current = true
+smoothing_enabled = true
+smoothing_speed = 3.0
+
+[node name="Cam_pos" type="Position2D" parent="Camera_setting"]
+position = Vector2( 433.404, 292.545 )
+
+[node name="Return_Cam_Timer" type="Timer" parent="Camera_setting"]
+wait_time = 0.1
+one_shot = true
+
+[node name="Equation" type="Node2D" parent="."]
+
+[node name="New equationTimer" type="Timer" parent="Equation"]
+wait_time = 0.2
+one_shot = true
+
+[node name="Equation_Position" type="Position2D" parent="Equation"]
+position = Vector2( 432, 432 )
+
+[node name="sparkle_spawn" parent="." instance=ExtResource( 11 )]
+
+[node name="kO_sign" type="Label" parent="."]
+margin_left = 403.757
+margin_top = 55.892
+margin_right = 455.757
+margin_bottom = 81.892
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0.501961, 0.121569, 0.121569, 1 )
+custom_colors/font_color_shadow = Color( 0.0313726, 0.0235294, 1, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/line_spacing = 3
+custom_constants/shadow_offset_y = 3
+custom_constants/shadow_as_outline = 3
+custom_fonts/font = SubResource( 1 )
+text = "ko"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Health_bars" type="Node2D" parent="."]
+position = Vector2( 0, -102.589 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Health_bar" parent="Health_bars" instance=ExtResource( 15 )]
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="BM" type="Node2D" parent="."]
+position = Vector2( 414.498, 756.734 )
+script = ExtResource( 16 )
+
+[node name="MasterBoard" type="TextureRect" parent="BM"]
+margin_left = -339.313
+margin_top = -52.4142
+margin_right = 380.688
+margin_bottom = 46.5857
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fighting_options" type="Node2D" parent="BM/MasterBoard"]
+position = Vector2( 5, -452 )
+
+[node name="fight" type="TextureRect" parent="BM/MasterBoard/Fighting_options"]
+margin_left = -19.551
+margin_top = 355.327
+margin_right = 110.449
+margin_bottom = 470.327
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="BM/MasterBoard/Fighting_options/fight"]
+margin_top = -26.1625
+margin_right = 140.0
+margin_bottom = 46.8375
+texture = ExtResource( 2 )
+expand = true
+
+[node name="Label" type="Label" parent="BM/MasterBoard/Fighting_options/fight"]
+margin_left = 11.8921
+margin_top = -9.86475
+margin_right = 124.892
+margin_bottom = 23.1353
+custom_fonts/font = SubResource( 2 )
+text = "attack"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AttackButton" type="TextureButton" parent="BM/MasterBoard/Fighting_options/fight"]
+margin_left = 19.0
+margin_top = 11.0
+margin_right = 113.0
+margin_bottom = 108.0
+texture_normal = ExtResource( 7 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="fight_button_sound" type="AudioStreamPlayer2D" parent="BM/MasterBoard/Fighting_options/fight"]
+stream = ExtResource( 22 )
+
+[node name="defence" type="TextureRect" parent="BM/MasterBoard/Fighting_options"]
+margin_left = 603.792
+margin_top = 362.828
+margin_right = 733.792
+margin_bottom = 469.828
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="BM/MasterBoard/Fighting_options/defence"]
+margin_left = -1.32129
+margin_top = -38.6697
+margin_right = 138.679
+margin_bottom = 37.3303
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="BM/MasterBoard/Fighting_options/defence"]
+margin_left = -15.6761
+margin_top = -15.1353
+margin_right = 166.324
+margin_bottom = 14.8647
+custom_fonts/font = SubResource( 3 )
+text = "defense"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DefenceButton" type="TextureButton" parent="BM/MasterBoard/Fighting_options/defence"]
+margin_left = 16.6633
+margin_top = 4.11224
+margin_right = 117.663
+margin_bottom = 109.112
+texture_normal = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="defence_button_sound" type="AudioStreamPlayer2D" parent="BM/MasterBoard/Fighting_options/defence"]
+stream = ExtResource( 22 )
+
+[node name="boxing_gloves_050" type="Sprite" parent="BM/MasterBoard"]
+modulate = Color( 1, 1, 1, 0.729412 )
+position = Vector2( 351.504, -2.08301 )
+scale = Vector2( 0.114121, 0.096398 )
+texture = ExtResource( 4 )
+
+[node name="Choosing_option" type="Node2D" parent="BM/MasterBoard"]
+position = Vector2( 9.52441, -1.5874 )
+script = ExtResource( 12 )
+
+[node name="Left" type="TouchScreenButton" parent="BM/MasterBoard/Choosing_option"]
+position = Vector2( -2.98038, 29.9339 )
+scale = Vector2( 1, 0.8 )
+normal = ExtResource( 19 )
+pressed = ExtResource( 20 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="pointing_arrow" parent="BM/MasterBoard/Choosing_option/Left" instance=ExtResource( 13 )]
+position = Vector2( 52.8569, 35.5494 )
+scale = Vector2( 1, 0.8 )
+
+[node name="Left_Label" type="Label" parent="BM/MasterBoard/Choosing_option/Left"]
+margin_right = 124.0
+margin_bottom = 59.0
+custom_fonts/font = SubResource( 4 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="left_button_sound" type="AudioStreamPlayer2D" parent="BM/MasterBoard/Choosing_option/Left"]
+stream = ExtResource( 23 )
+volume_db = -20.946
+
+[node name="between_left" type="TouchScreenButton" parent="BM/MasterBoard/Choosing_option"]
+position = Vector2( 277.725, 26.7586 )
+scale = Vector2( 1, 0.8 )
+normal = ExtResource( 19 )
+pressed = ExtResource( 20 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="pointing_arrow" parent="BM/MasterBoard/Choosing_option/between_left" instance=ExtResource( 13 )]
+position = Vector2( 52.8569, 35.5494 )
+scale = Vector2( 1, 0.8 )
+
+[node name="between_left_Label" type="Label" parent="BM/MasterBoard/Choosing_option/between_left"]
+margin_right = 124.0
+margin_bottom = 59.0
+custom_fonts/font = SubResource( 4 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="between_left_sound" type="AudioStreamPlayer2D" parent="BM/MasterBoard/Choosing_option/between_left"]
+stream = ExtResource( 23 )
+volume_db = -20.0
+
+[node name="Right" type="TouchScreenButton" parent="BM/MasterBoard/Choosing_option"]
+position = Vector2( 580.924, 26.9536 )
+scale = Vector2( 1, 0.8 )
+normal = ExtResource( 19 )
+pressed = ExtResource( 20 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="pointing_arrow" parent="BM/MasterBoard/Choosing_option/Right" instance=ExtResource( 13 )]
+position = Vector2( 52.8568, 28.3162 )
+scale = Vector2( 1, 0.8 )
+
+[node name="Right_Label" type="Label" parent="BM/MasterBoard/Choosing_option/Right"]
+margin_left = 2.01807
+margin_top = -0.447021
+margin_right = 126.018
+margin_bottom = 58.553
+custom_fonts/font = SubResource( 4 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Right_button_sound" type="AudioStreamPlayer2D" parent="BM/MasterBoard/Choosing_option/Right"]
+stream = ExtResource( 23 )
+volume_db = -20.0
+
+[node name="True_and_False" parent="BM/MasterBoard/Choosing_option" instance=ExtResource( 14 )]
+
+[node name="true_and_false_pos" type="Position2D" parent="BM/MasterBoard/Choosing_option"]
+position = Vector2( 342.637, -7.18097 )
+
+[node name="Tween" type="Tween" parent="BM"]
+
+[node name="Pressure_Timer" type="Timer" parent="BM"]
+wait_time = 4.0
+
+[node name="bounce_sound" type="AudioStreamPlayer2D" parent="BM"]
+stream = ExtResource( 25 )
+
+[node name="Board_pos" type="Position2D" parent="."]
+position = Vector2( 415, 492 )
+__meta__ = {
+"_gizmo_extents_": 331.1
+}
+
+[node name="Pause_button" type="TouchScreenButton" parent="."]
+pause_mode = 2
+position = Vector2( 364.11, -11.1821 )
+normal = ExtResource( 21 )
+pressed = ExtResource( 17 )
+
+[node name="pause_timer" type="Timer" parent="Pause_button"]
+wait_time = 0.3
+one_shot = true
+
+[node name="pause_button_sound" type="AudioStreamPlayer2D" parent="Pause_button"]
+position = Vector2( -389.11, 12.1821 )
+stream = ExtResource( 24 )
+
+[node name="Clock_for_equation" type="Node2D" parent="."]
+
+[node name="Position2D" type="Position2D" parent="Clock_for_equation"]
+position = Vector2( 209, 788 )
+__meta__ = {
+"_gizmo_extents_": 515.1
+}
+
+[node name="crowd" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 26 )
+volume_db = -6.057
+
+[node name="clapping" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 27 )
+
+[node name="exit_button" type="TouchScreenButton" parent="."]
+position = Vector2( 433, -21 )
+normal = ExtResource( 29 )
+pressed = ExtResource( 28 )
+
+[connection signal="rage" from="." to="Rage_bar/rage_bar" method="_on_UI_rage"]
+[connection signal="rage_full" from="Rage_bar/rage_bar" to="." method="_on_rage_bar_rage_full"]
+[connection signal="timeout" from="Camera_setting/Return_Cam_Timer" to="Camera_setting" method="_on_Return_Cam_Timer_timeout"]
+[connection signal="timeout" from="Equation/New equationTimer" to="." method="_on_New_equationTimer_timeout"]
+[connection signal="check" from="Health_bars/Health_bar" to="." method="_on_Health_bar_check"]
+[connection signal="pressed" from="BM/MasterBoard/Fighting_options/fight/AttackButton" to="." method="_on_AttackButton_pressed"]
+[connection signal="pressed" from="BM/MasterBoard/Fighting_options/defence/DefenceButton" to="." method="_on_DefenceButton_pressed"]
+[connection signal="wrong" from="BM/MasterBoard/Choosing_option" to="." method="_on_Choosing_option_wrong"]
+[connection signal="pressed" from="BM/MasterBoard/Choosing_option/Left" to="BM/MasterBoard/Choosing_option" method="_on_Left_pressed"]
+[connection signal="pressed" from="BM/MasterBoard/Choosing_option/between_left" to="BM/MasterBoard/Choosing_option" method="_on_between_left_pressed"]
+[connection signal="pressed" from="BM/MasterBoard/Choosing_option/Right" to="BM/MasterBoard/Choosing_option" method="_on_Right_pressed"]
+[connection signal="timeout" from="BM/Pressure_Timer" to="BM" method="_on_Pressure_Timer_timeout"]
+[connection signal="pressed" from="Pause_button" to="." method="_on_Pause_button_pressed"]
+[connection signal="timeout" from="Pause_button/pause_timer" to="." method="_on_pause_timer_timeout"]
+[connection signal="pressed" from="exit_button" to="." method="_on_exit_button_pressed"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/switch19.wav-4f9a27b9d48f8af18fd88e7193e94d3e.sample"
+
+[deps]
+
+source_file="res://game_musique/UI_SFX_Set/switch19.wav"
+dest_files=[ "res://.import/switch19.wav-4f9a27b9d48f8af18fd88e7193e94d3e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

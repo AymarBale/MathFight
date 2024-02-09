@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/boxing-match-crowd-cheering-shouting-sound-effect.mp3-54a882c86f98db5b41ae7af18219c24e.mp3str"
+
+[deps]
+
+source_file="res://Level/boxing-match-crowd-cheering-shouting-sound-effect.mp3"
+dest_files=[ "res://.import/boxing-match-crowd-cheering-shouting-sound-effect.mp3-54a882c86f98db5b41ae7af18219c24e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

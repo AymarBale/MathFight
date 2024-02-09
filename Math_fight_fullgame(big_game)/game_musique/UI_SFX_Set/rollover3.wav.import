@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/rollover3.wav-1ad0eacf11385b94f88eb127d9541b58.sample"
+
+[deps]
+
+source_file="res://game_musique/UI_SFX_Set/rollover3.wav"
+dest_files=[ "res://.import/rollover3.wav-1ad0eacf11385b94f88eb127d9541b58.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

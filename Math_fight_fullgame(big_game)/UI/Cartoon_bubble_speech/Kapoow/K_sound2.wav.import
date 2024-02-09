@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/K_sound2.wav-3e4757a63592b792fc5edd42e643c969.sample"
+
+[deps]
+
+source_file="res://UI/Cartoon_bubble_speech/Kapoow/K_sound2.wav"
+dest_files=[ "res://.import/K_sound2.wav-3e4757a63592b792fc5edd42e643c969.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

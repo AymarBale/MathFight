@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/boxing-match-bell-ding-crowd-cheering-foley-sfx-sound-effect.mp3-b666558fab4ca3cda8d948dbed793104.mp3str"
+
+[deps]
+
+source_file="res://Level/boxing-match-bell-ding-crowd-cheering-foley-sfx-sound-effect.mp3"
+dest_files=[ "res://.import/boxing-match-bell-ding-crowd-cheering-foley-sfx-sound-effect.mp3-b666558fab4ca3cda8d948dbed793104.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,373 @@
+[gd_scene load_steps=58 format=2]
+
+[ext_resource path="res://Gamemodes/arcades/HEAD/H04_1.png" type="Texture" id=1]
+[ext_resource path="res://Gamemodes/arcades/HEAD/H03_1.png" type="Texture" id=2]
+[ext_resource path="res://Gamemodes/arcades/HEAD/H05_1.png" type="Texture" id=3]
+[ext_resource path="res://Gamemodes/arcades/HEAD/H02_1.png" type="Texture" id=4]
+[ext_resource path="res://Gamemodes/arcades/HEAD/H06_1.png" type="Texture" id=5]
+[ext_resource path="res://Gamemodes/arcades/HEAD/H01_1.png" type="Texture" id=6]
+[ext_resource path="res://Gamemodes/tournament/tournament .gd" type="Script" id=7]
+[ext_resource path="res://Main_Screen/GUI Pro Kit - Casual Game/common_icon_crown.png" type="Texture" id=8]
+[ext_resource path="res://Main_Screen/GUI Pro Kit - Casual Game/common_icon_trophy.png" type="Texture" id=9]
+[ext_resource path="res://Pre_start_screen/Background/Simplebackgrounds--1i4w8b919j395g8f0z/pngs/bubbles/bubble_bg_large_screen_orange.png" type="Texture" id=10]
+[ext_resource path="res://Gamemodes/training_ground/04B_30__.TTF" type="DynamicFontData" id=11]
+[ext_resource path="res://Gamemodes/arcades/short_curved_left_from_down.png" type="Texture" id=12]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_016.png" type="Texture" id=13]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_024.png" type="Texture" id=14]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_015.png" type="Texture" id=15]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_009.png" type="Texture" id=16]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_021.png" type="Texture" id=17]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_022.png" type="Texture" id=18]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_006.png" type="Texture" id=19]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_017.png" type="Texture" id=20]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_003.png" type="Texture" id=21]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_014.png" type="Texture" id=22]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_005.png" type="Texture" id=23]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_007.png" type="Texture" id=24]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_001.png" type="Texture" id=25]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_013.png" type="Texture" id=26]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_033.png" type="Texture" id=27]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_035.png" type="Texture" id=28]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_027.png" type="Texture" id=29]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_023.png" type="Texture" id=30]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_012.png" type="Texture" id=31]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_031.png" type="Texture" id=32]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_011.png" type="Texture" id=33]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_010.png" type="Texture" id=34]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_036.png" type="Texture" id=35]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_004.png" type="Texture" id=36]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_002.png" type="Texture" id=37]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_032.png" type="Texture" id=38]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_026.png" type="Texture" id=39]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_020.png" type="Texture" id=40]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_030.png" type="Texture" id=41]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_028.png" type="Texture" id=42]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_025.png" type="Texture" id=43]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_034.png" type="Texture" id=44]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_029.png" type="Texture" id=45]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_018.png" type="Texture" id=46]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_019.png" type="Texture" id=47]
+[ext_resource path="res://UI_asset_for_math_fight/transition/FOOTAGECRATE-TransitionBrushToWhite/frame_008.png" type="Texture" id=48]
+
+[sub_resource type="DynamicFont" id=1]
+size = 80
+font_data = ExtResource( 11 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=8]
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ ExtResource( 35 ), ExtResource( 28 ), ExtResource( 44 ), ExtResource( 27 ), ExtResource( 38 ), ExtResource( 32 ), ExtResource( 41 ), ExtResource( 45 ), ExtResource( 42 ), ExtResource( 29 ), ExtResource( 39 ), ExtResource( 43 ), ExtResource( 14 ), ExtResource( 30 ), ExtResource( 18 ), ExtResource( 17 ), ExtResource( 40 ), ExtResource( 47 ), ExtResource( 46 ), ExtResource( 20 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 22 ), ExtResource( 26 ), ExtResource( 31 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 16 ), ExtResource( 48 ), ExtResource( 24 ), ExtResource( 19 ), ExtResource( 23 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 21 ), ExtResource( 25 ) ],
+"loop": false,
+"name": "default",
+"speed": 50.0
+} ]
+
+[node name="tournament " type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 867.0
+margin_bottom = 584.0
+texture = ExtResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tournament_text" type="RichTextLabel" parent="."]
+margin_left = 109.956
+margin_top = 23.7798
+margin_right = 893.956
+margin_bottom = 257.78
+rect_clip_content = false
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.705882, 0.439216, 0.0588235, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+custom_constants/table_vseparation = 5
+custom_constants/shadow_offset_x = 5
+custom_constants/shadow_offset_y = 5
+custom_constants/table_hseparation = 5
+custom_constants/line_separation = 5
+custom_constants/shadow_as_outline = 5
+bbcode_enabled = true
+bbcode_text = "[wave amp=150 freq=12]TOURNAMENT"
+text = "TOURNAMENT"
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="tournament_graph" type="Node2D" parent="."]
+position = Vector2( 2.11893, 29.665 )
+
+[node name="bracket" type="Node2D" parent="tournament_graph"]
+
+[node name="ColorRect" type="ColorRect" parent="tournament_graph/bracket"]
+margin_left = 72.0
+margin_top = 280.0
+margin_right = 84.0
+margin_bottom = 400.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="path_2" type="ColorRect" parent="tournament_graph/bracket"]
+margin_left = 240.0
+margin_top = 280.0
+margin_right = 252.0
+margin_bottom = 405.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="path_3" type="ColorRect" parent="tournament_graph/bracket"]
+margin_left = 158.318
+margin_top = 176.0
+margin_right = 170.318
+margin_bottom = 277.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="path_4" type="ColorRect" parent="tournament_graph/bracket"]
+margin_left = 408.0
+margin_top = 96.0
+margin_right = 420.0
+margin_bottom = 181.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect14" type="ColorRect" parent="tournament_graph/bracket"]
+margin_left = 672.0
+margin_top = 176.0
+margin_right = 684.0
+margin_bottom = 277.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect10" type="ColorRect" parent="tournament_graph/bracket"]
+margin_left = 576.0
+margin_top = 280.0
+margin_right = 588.0
+margin_bottom = 405.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="tournament_graph/bracket"]
+margin_left = 752.0
+margin_top = 280.0
+margin_right = 764.0
+margin_bottom = 392.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect3" type="ColorRect" parent="tournament_graph/bracket"]
+margin_left = 632.0
+margin_top = 408.0
+margin_right = 644.0
+margin_bottom = 512.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="path_1_2" type="ColorRect" parent="tournament_graph/bracket"]
+margin_left = 304.0
+margin_top = 414.541
+margin_right = 316.0
+margin_bottom = 518.541
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="first_" type="ColorRect" parent="tournament_graph/bracket"]
+margin_left = 496.0
+margin_top = 408.0
+margin_right = 508.0
+margin_bottom = 512.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="path_1" type="ColorRect" parent="tournament_graph/bracket"]
+margin_left = 175.74
+margin_top = 413.092
+margin_right = 187.74
+margin_bottom = 517.092
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="path_1_3" type="ColorRect" parent="tournament_graph/bracket"]
+margin_left = 176.0
+margin_top = 402.523
+margin_right = 316.0
+margin_bottom = 418.523
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="path_2_1" type="ColorRect" parent="tournament_graph/bracket"]
+margin_left = 72.0
+margin_top = 272.0
+margin_right = 252.0
+margin_bottom = 288.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect15" type="ColorRect" parent="tournament_graph/bracket"]
+margin_left = 160.0
+margin_top = 176.0
+margin_right = 680.0
+margin_bottom = 192.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect12" type="ColorRect" parent="tournament_graph/bracket"]
+margin_left = 576.0
+margin_top = 272.0
+margin_right = 764.0
+margin_bottom = 288.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect8" type="ColorRect" parent="tournament_graph/bracket"]
+margin_left = 496.0
+margin_top = 400.0
+margin_right = 644.0
+margin_bottom = 416.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="common_icon_trophy" type="Sprite" parent="tournament_graph"]
+position = Vector2( 413.622, 89.1892 )
+texture = ExtResource( 9 )
+
+[node name="common_icon_crown" type="Sprite" parent="tournament_graph"]
+position = Vector2( 412.474, 42.837 )
+scale = Vector2( 0.981419, 0.795605 )
+texture = ExtResource( 8 )
+
+[node name="start_pos" type="Node2D" parent="tournament_graph"]
+
+[node name="f_seed" type="Position2D" parent="tournament_graph/start_pos"]
+position = Vector2( 79.375, 394.355 )
+
+[node name="f_seed2" type="Position2D" parent="tournament_graph/start_pos"]
+position = Vector2( 180.588, 501.859 )
+
+[node name="f_seed3" type="Position2D" parent="tournament_graph/start_pos"]
+position = Vector2( 309.097, 502.697 )
+
+[node name="f_seed4" type="Position2D" parent="tournament_graph/start_pos"]
+position = Vector2( 499.345, 498.923 )
+
+[node name="f_seed5" type="Position2D" parent="tournament_graph/start_pos"]
+position = Vector2( 637.52, 498.079 )
+
+[node name="f_seed6" type="Position2D" parent="tournament_graph/start_pos"]
+position = Vector2( 760.992, 384.276 )
+
+[node name="vince" type="AnimatedSprite" parent="tournament_graph/start_pos"]
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 2 )
+
+[node name="brook" type="AnimatedSprite" parent="tournament_graph/start_pos"]
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 3 )
+
+[node name="mathieux" type="AnimatedSprite" parent="tournament_graph/start_pos"]
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 4 )
+
+[node name="blake" type="AnimatedSprite" parent="tournament_graph/start_pos"]
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 5 )
+
+[node name="fernando" type="AnimatedSprite" parent="tournament_graph/start_pos"]
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 6 )
+
+[node name="devo" type="AnimatedSprite" parent="tournament_graph/start_pos"]
+position = Vector2( 39.6427, 79.2854 )
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 7 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 50.9351, 49.0687 )
+scale = Vector2( 0.18, 0.18 )
+texture = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true,
+"_editor_description_": ""
+}
+
+[node name="Go_back_button" type="TouchScreenButton" parent="Sprite"]
+position = Vector2( -188.988, -188.988 )
+scale = Vector2( 20, 20 )
+shape = SubResource( 8 )
+
+[node name="Transition" type="AnimatedSprite" parent="."]
+modulate = Color( 0.054902, 0.0156863, 0.396078, 1 )
+position = Vector2( 435.893, 290.971 )
+scale = Vector2( 1.2066, 1.23128 )
+frames = SubResource( 9 )
+[connection signal="pressed" from="Sprite/Go_back_button" to="." method="_on_Go_back_button_pressed"]

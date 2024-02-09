@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/458398__breviceps__balloon-pop-christmas-cracker-confetti-cannon.wav-132baad1c9020f7a4e00595a0bee93ef.sample"
+
+[deps]
+
+source_file="res://Character/Win_or_loose/ezgif-2-738559c72534-png-512x512-sprite-png/458398__breviceps__balloon-pop-christmas-cracker-confetti-cannon.wav"
+dest_files=[ "res://.import/458398__breviceps__balloon-pop-christmas-cracker-confetti-cannon.wav-132baad1c9020f7a4e00595a0bee93ef.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

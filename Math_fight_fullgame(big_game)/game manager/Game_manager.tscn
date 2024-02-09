@@ -1,0 +1,170 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://UI/fonts/GravityBold8.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://game manager/Game_manager.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=7]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=8]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=9]
+font_data = ExtResource( 1 )
+
+[node name="Game_manager" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="values" type="Node2D" parent="."]
+
+[node name="lv2" type="Label" parent="values"]
+margin_left = 8.8194
+margin_top = 57.9563
+margin_right = 50.8194
+margin_bottom = 73.9563
+custom_fonts/font = SubResource( 1 )
+text = "lv2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lv3" type="Label" parent="values"]
+margin_left = 6.29959
+margin_top = 109.613
+margin_right = 48.2996
+margin_bottom = 125.613
+custom_fonts/font = SubResource( 2 )
+text = "lv3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lv4" type="Label" parent="values"]
+margin_left = 5.03964
+margin_top = 154.97
+margin_right = 47.0396
+margin_bottom = 170.97
+custom_fonts/font = SubResource( 3 )
+text = "lv4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lv5" type="Label" parent="values"]
+margin_left = 7.55957
+margin_top = 209.147
+margin_right = 49.5596
+margin_bottom = 225.147
+custom_fonts/font = SubResource( 4 )
+text = "lv5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="mat" type="Label" parent="values"]
+margin_left = 395.615
+margin_top = 8.81943
+margin_right = 441.615
+margin_bottom = 24.8194
+custom_fonts/font = SubResource( 5 )
+text = "mat"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="vin" type="Label" parent="values"]
+margin_left = 404.434
+margin_top = 64.256
+margin_right = 444.434
+margin_bottom = 80.256
+custom_fonts/font = SubResource( 6 )
+text = "vin"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="brook" type="Label" parent="values"]
+margin_left = 393.095
+margin_top = 119.692
+margin_right = 471.095
+margin_bottom = 135.692
+custom_fonts/font = SubResource( 7 )
+text = "brook"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="fer" type="Label" parent="values"]
+margin_left = 399.395
+margin_top = 158.75
+margin_right = 441.395
+margin_bottom = 174.75
+custom_fonts/font = SubResource( 8 )
+text = "fer"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dev" type="Label" parent="values"]
+margin_left = 396.875
+margin_top = 210.407
+margin_right = 438.875
+margin_bottom = 226.407
+custom_fonts/font = SubResource( 9 )
+text = "dee"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="game_tutorial" type="Label" parent="values"]
+margin_left = 642.875
+margin_top = 8.407
+margin_right = 684.875
+margin_bottom = 24.407
+custom_fonts/font = SubResource( 9 )
+text = "game_tutorial"
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="already" type="Label" parent="values"]
+margin_left = 637.875
+margin_top = 73.407
+margin_right = 823.875
+margin_bottom = 89.407
+custom_fonts/font = SubResource( 9 )
+text = "already_done"
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="Resetter" type="Button" parent="."]
+margin_left = 159.874
+margin_top = 294.091
+margin_right = 610.874
+margin_bottom = 455.091
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Resetter" to="." method="_on_Resetter_pressed"]

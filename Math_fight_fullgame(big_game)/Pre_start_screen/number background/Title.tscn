@@ -1,0 +1,59 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Pre_start_screen/number background/Title.gd" type="Script" id=2]
+
+[node name="Title" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="number_appearance" type="Node2D" parent="."]
+
+[node name="A1" type="Position2D" parent="number_appearance"]
+position = Vector2( 68.4945, 104.138 )
+
+[node name="A2" type="Position2D" parent="number_appearance"]
+position = Vector2( 581.902, 521.285 )
+
+[node name="A3" type="Position2D" parent="number_appearance"]
+position = Vector2( 85.6747, 516.568 )
+
+[node name="B1" type="Position2D" parent="number_appearance"]
+position = Vector2( 298.579, 530.267 )
+
+[node name="B2" type="Position2D" parent="number_appearance"]
+position = Vector2( 261.149, 69.9602 )
+
+[node name="B3" type="Position2D" parent="number_appearance"]
+position = Vector2( 798.792, 480.74 )
+
+[node name="C1" type="Position2D" parent="number_appearance"]
+position = Vector2( 580.163, 85.0332 )
+
+[node name="C2" type="Position2D" parent="number_appearance"]
+position = Vector2( 733.644, 255.375 )
+
+[node name="C3" type="Position2D" parent="number_appearance"]
+position = Vector2( 173.458, 289.507 )
+
+[node name="number_container" type="Node2D" parent="."]
+
+[node name="r_one" type="Node2D" parent="number_container"]
+
+[node name="Timer_one" type="Timer" parent="number_container/r_one"]
+wait_time = 3.0
+one_shot = true
+
+[node name="r_two" type="Node2D" parent="number_container"]
+
+[node name="Timer_two" type="Timer" parent="number_container/r_two"]
+wait_time = 3.0
+one_shot = true
+
+[node name="r_three" type="Node2D" parent="number_container"]
+
+[node name="Timer_three" type="Timer" parent="number_container/r_three"]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="number_container/r_one/Timer_one" to="." method="_on_Timer_one_timeout"]
+[connection signal="timeout" from="number_container/r_two/Timer_two" to="." method="_on_Timer_two_timeout"]
+[connection signal="timeout" from="number_container/r_three/Timer_three" to="." method="_on_Timer_three_timeout"]

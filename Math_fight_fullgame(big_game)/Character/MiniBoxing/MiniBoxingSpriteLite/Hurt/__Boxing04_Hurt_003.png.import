@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/__Boxing04_Hurt_003.png-5c37c24161d379e4a6696ad34c52707d.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Character/MiniBoxing/MiniBoxingSpriteLite/Hurt/__Boxing04_Hurt_003.png"
+dest_files=[ "res://.import/__Boxing04_Hurt_003.png-5c37c24161d379e4a6696ad34c52707d.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

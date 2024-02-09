@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/9.ogg-7be60c61563d5f1c789f1db588315ff8.oggstr"
+
+[deps]
+
+source_file="res://Level/Math_fight_audio_asset_file/kenney_voiceoverfighter/Audio/9.ogg"
+dest_files=[ "res://.import/9.ogg-7be60c61563d5f1c789f1db588315ff8.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Clic04.mp3.wav-b8eba409110bbe3070fcbae0b1566395.sample"
+
+[deps]
+
+source_file="res://Main_Screen/buttons_sound/Clic04.mp3.wav"
+dest_files=[ "res://.import/Clic04.mp3.wav-b8eba409110bbe3070fcbae0b1566395.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

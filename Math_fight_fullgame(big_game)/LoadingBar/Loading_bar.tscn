@@ -1,0 +1,147 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://Gamemodes/arcades/burst_background_large_screen_red.png" type="Texture" id=1]
+[ext_resource path="res://LoadingBar/filer.png" type="Texture" id=2]
+[ext_resource path="res://LoadingBar/under.png" type="Texture" id=3]
+[ext_resource path="res://Main_Screen/Life Hacks.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://Main_Screen/Designer.otf" type="DynamicFontData" id=5]
+[ext_resource path="res://Pre_start_screen/number background/Title.tscn" type="PackedScene" id=6]
+[ext_resource path="res://LoadingBar/ezgif-2-cef00002bb95-png-42x42-sprite-png/tile008.png" type="Texture" id=7]
+[ext_resource path="res://LoadingBar/ezgif-2-cef00002bb95-png-42x42-sprite-png/tile003.png" type="Texture" id=8]
+[ext_resource path="res://LoadingBar/ezgif-2-cef00002bb95-png-42x42-sprite-png/tile000.png" type="Texture" id=9]
+[ext_resource path="res://LoadingBar/ezgif-2-cef00002bb95-png-42x42-sprite-png/tile007.png" type="Texture" id=10]
+[ext_resource path="res://LoadingBar/ezgif-2-cef00002bb95-png-42x42-sprite-png/tile009.png" type="Texture" id=11]
+[ext_resource path="res://LoadingBar/ezgif-2-cef00002bb95-png-42x42-sprite-png/tile011.png" type="Texture" id=12]
+[ext_resource path="res://LoadingBar/ezgif-2-cef00002bb95-png-42x42-sprite-png/tile012.png" type="Texture" id=13]
+[ext_resource path="res://LoadingBar/ezgif-2-cef00002bb95-png-42x42-sprite-png/tile014.png" type="Texture" id=14]
+[ext_resource path="res://LoadingBar/ezgif-2-cef00002bb95-png-42x42-sprite-png/tile004.png" type="Texture" id=15]
+[ext_resource path="res://LoadingBar/ezgif-2-cef00002bb95-png-42x42-sprite-png/tile005.png" type="Texture" id=16]
+[ext_resource path="res://LoadingBar/ezgif-2-cef00002bb95-png-42x42-sprite-png/tile010.png" type="Texture" id=17]
+[ext_resource path="res://LoadingBar/ezgif-2-cef00002bb95-png-42x42-sprite-png/tile006.png" type="Texture" id=18]
+[ext_resource path="res://LoadingBar/ezgif-2-cef00002bb95-png-42x42-sprite-png/tile013.png" type="Texture" id=19]
+[ext_resource path="res://LoadingBar/ezgif-2-cef00002bb95-png-42x42-sprite-png/tile002.png" type="Texture" id=20]
+[ext_resource path="res://LoadingBar/ezgif-2-cef00002bb95-png-42x42-sprite-png/tile001.png" type="Texture" id=21]
+[ext_resource path="res://LoadingBar/Loading_bar.gd" type="Script" id=22]
+[ext_resource path="res://LoadingBar/Sketsa01.png" type="Texture" id=23]
+[ext_resource path="res://LoadingBar/Sketsa02.png" type="Texture" id=24]
+[ext_resource path="res://Main_Screen/glove_bar.jpg" type="Texture" id=25]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 5 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 9 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 8 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 18 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 11 ), ExtResource( 17 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 19 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Loading_bar" type="Node2D"]
+script = ExtResource( 22 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_top = -1.0
+margin_right = 864.0
+margin_bottom = 583.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureProgress" type="TextureProgress" parent="."]
+margin_left = 2.67261
+margin_top = 270.833
+margin_right = 856.673
+margin_bottom = 345.833
+value = 1.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 2 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 389.323
+margin_top = 289.542
+margin_right = 470.323
+margin_bottom = 331.542
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0.00784314, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.0509804, 0.00392157, 0.00392157, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/line_spacing = 5
+custom_constants/shadow_offset_y = 5
+custom_constants/shadow_as_outline = 0
+text = "fxyj"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="RichTextLabel" parent="."]
+margin_left = 208.545
+margin_top = 221.127
+margin_right = 691.545
+margin_bottom = 276.127
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0.921569, 0.560784, 0.0431373, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/table_vseparation = 5
+custom_constants/shadow_offset_x = 5
+custom_constants/shadow_offset_y = 5
+custom_constants/table_hseparation = 5
+custom_constants/line_separation = 5
+bbcode_enabled = true
+bbcode_text = "Thank you for your patience"
+text = "Thank you for your patience"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 434.759, 106.017 )
+scale = Vector2( 3.92724, 3.84239 )
+frames = SubResource( 3 )
+frame = 1
+playing = true
+
+[node name="Title" parent="." instance=ExtResource( 6 )]
+
+[node name="Sketsa01" type="Sprite" parent="Title"]
+position = Vector2( 143.085, 432.289 )
+rotation = -0.382227
+texture = ExtResource( 23 )
+
+[node name="Sketsa02" type="Sprite" parent="Title"]
+position = Vector2( 745.333, 133.838 )
+texture = ExtResource( 24 )
+flip_h = true
+
+[node name="CHIBI" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+margin_left = 867.0
+margin_right = 1985.0
+margin_bottom = 587.0
+texture = ExtResource( 25 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[connection signal="timeout" from="CHIBI" to="." method="_on_CHIBI_timeout"]

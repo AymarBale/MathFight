@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/3-2-1.wav-59cefe561a35f60622557f872c3d6adc.sample"
+
+[deps]
+
+source_file="res://Pre_start_screen/Intro/3-2-1.wav"
+dest_files=[ "res://.import/3-2-1.wav-59cefe561a35f60622557f872c3d6adc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

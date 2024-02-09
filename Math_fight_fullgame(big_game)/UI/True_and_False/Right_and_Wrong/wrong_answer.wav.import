@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/wrong_answer.wav-8db138e6da64cce9061d19e238680b1b.sample"
+
+[deps]
+
+source_file="res://UI/True_and_False/Right_and_Wrong/wrong_answer.wav"
+dest_files=[ "res://.import/wrong_answer.wav-8db138e6da64cce9061d19e238680b1b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

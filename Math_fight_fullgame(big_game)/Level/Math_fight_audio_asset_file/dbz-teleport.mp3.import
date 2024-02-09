@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/dbz-teleport.mp3-0dc636df2166d5ea76ea9456b4d9f7b1.mp3str"
+
+[deps]
+
+source_file="res://Level/Math_fight_audio_asset_file/dbz-teleport.mp3"
+dest_files=[ "res://.import/dbz-teleport.mp3-0dc636df2166d5ea76ea9456b4d9f7b1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/disappionted_crowd.wav-abcdf8d877afed7ed671fbf88d3aae9f.sample"
+
+[deps]
+
+source_file="res://Character/Win_or_loose/disappionted_crowd.wav"
+dest_files=[ "res://.import/disappionted_crowd.wav-abcdf8d877afed7ed671fbf88d3aae9f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

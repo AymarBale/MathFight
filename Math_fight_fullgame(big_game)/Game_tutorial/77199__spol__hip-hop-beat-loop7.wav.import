@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/77199__spol__hip-hop-beat-loop7.wav-45024038d1975ae4228f09746a09124d.sample"
+
+[deps]
+
+source_file="res://Game_tutorial/77199__spol__hip-hop-beat-loop7.wav"
+dest_files=[ "res://.import/77199__spol__hip-hop-beat-loop7.wav-45024038d1975ae4228f09746a09124d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

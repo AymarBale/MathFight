@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/swish-5.wav-7c3c29dd4d6ab5d9c79674b5275f7ca7.sample"
+
+[deps]
+
+source_file="res://Main_Screen/swishes_sound/swish-5.wav"
+dest_files=[ "res://.import/swish-5.wav-7c3c29dd4d6ab5d9c79674b5275f7ca7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

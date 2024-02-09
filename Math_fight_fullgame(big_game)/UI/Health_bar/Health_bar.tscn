@@ -1,0 +1,199 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://UI/1/hud_frame.png" type="Texture" id=1]
+[ext_resource path="res://UI/1/hud_mp.png" type="Texture" id=2]
+[ext_resource path="res://UI/3/custom.png" type="Texture" id=3]
+[ext_resource path="res://UI/1/hud_hp.png" type="Texture" id=4]
+[ext_resource path="res://UI/1/custom_meter_bar.png" type="Texture" id=5]
+[ext_resource path="res://UI/3/hud_bg.png" type="Texture" id=6]
+[ext_resource path="res://UI/3/hp_bar.png" type="Texture" id=7]
+[ext_resource path="res://UI/3/mp_bar.png" type="Texture" id=8]
+[ext_resource path="res://UI/Health_bar/ef_1_00000.png" type="Texture" id=9]
+[ext_resource path="res://UI/fonts/GravityBold8.ttf" type="DynamicFontData" id=10]
+[ext_resource path="res://Main_Screen/HB_Fronts_0017_Circle------------------.png" type="Texture" id=11]
+[ext_resource path="res://UI/Health_bar/Health_bar.gd" type="Script" id=12]
+[ext_resource path="res://UI/Health_bar/Player_bar.gd" type="Script" id=13]
+[ext_resource path="res://UI/Health_bar/Enemy_bar.gd" type="Script" id=14]
+[ext_resource path="res://UI/Health_bar/172206__fins__teleport.wav" type="AudioStream" id=15]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 10 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 10 )
+
+[node name="Health_bar" type="Node2D"]
+script = ExtResource( 12 )
+
+[node name="HB_Fronts_0199_Circle------------------" type="Sprite" parent="."]
+position = Vector2( 151.195, 52.4315 )
+scale = Vector2( 0.275474, 0.174008 )
+texture = ExtResource( 9 )
+flip_h = true
+
+[node name="Label" type="Label" parent="."]
+margin_left = 13.0785
+margin_top = 2.74512
+margin_right = 97.0785
+margin_bottom = 58.7451
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0.239216, 0.952941, 1 )
+custom_colors/font_color_shadow = Color( 0.0627451, 0.27451, 0.886275, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/line_spacing = 3
+custom_constants/shadow_offset_y = 3
+custom_constants/shadow_as_outline = 0
+custom_fonts/font = SubResource( 1 )
+text = "PLAYER"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Player_bar" type="Control" parent="."]
+margin_left = 96.1286
+margin_top = 23.1281
+margin_right = 136.129
+margin_bottom = 63.1281
+script = ExtResource( 13 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Player_bar"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Life" type="TextureProgress" parent="Player_bar"]
+margin_right = 199.0
+margin_bottom = 11.0
+max_value = 12.0
+step = 0.0
+value = 12.0
+texture_progress = ExtResource( 4 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="defence" type="TextureProgress" parent="Player_bar"]
+margin_left = 6.17354
+margin_top = 10.1022
+margin_right = 186.174
+margin_bottom = 50.1022
+step = 0.0
+value = 100.0
+texture_progress = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="round_won" type="TextureProgress" parent="Player_bar"]
+margin_left = 4.83871
+margin_top = 15.7145
+margin_right = 72.8387
+margin_bottom = 55.7145
+max_value = 4.0
+step = 0.0
+value = 4.0
+texture_progress = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="Player_bar"]
+
+[node name="health_timer" type="Timer" parent="Player_bar"]
+one_shot = true
+
+[node name="health_lost" type="AudioStreamPlayer2D" parent="Player_bar"]
+position = Vector2( -96.1286, -23.1281 )
+stream = ExtResource( 15 )
+volume_db = -20.0
+
+[node name="HB_Fronts_0038_Circle------------------" type="Sprite" parent="."]
+position = Vector2( 816.129, 45.6456 )
+texture = ExtResource( 11 )
+
+[node name="Enemy_bar" type="Control" parent="."]
+margin_left = 518.85
+margin_top = -13.043
+margin_right = 558.85
+margin_bottom = 26.957
+script = ExtResource( 14 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Enemy_bar"]
+margin_left = 24.784
+margin_top = 13.0
+margin_right = 337.784
+margin_bottom = 112.0
+texture = ExtResource( 6 )
+expand = true
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Life" type="TextureProgress" parent="Enemy_bar"]
+margin_left = 88.0
+margin_top = 40.0
+margin_right = 257.0
+margin_bottom = 52.0
+max_value = 4.0
+step = 0.0
+value = 4.0
+texture_progress = ExtResource( 7 )
+fill_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="defence" type="TextureProgress" parent="Enemy_bar"]
+margin_left = 90.4749
+margin_top = 54.858
+margin_right = 259.475
+margin_bottom = 61.858
+max_value = 5.0
+step = 0.0
+value = 5.0
+texture_progress = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="round_won" type="TextureProgress" parent="Enemy_bar"]
+margin_left = 214.487
+margin_top = 67.2081
+margin_right = 256.487
+margin_bottom = 79.2081
+max_value = 5.0
+value = 5.0
+texture_progress = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="health_timer" type="Timer" parent="Enemy_bar"]
+one_shot = true
+
+[node name="Tween" type="Tween" parent="Enemy_bar"]
+
+[node name="Label3" type="Label" parent="Enemy_bar"]
+margin_left = -298.85
+margin_top = 176.043
+margin_right = 147.15
+margin_bottom = 302.043
+custom_fonts/font = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

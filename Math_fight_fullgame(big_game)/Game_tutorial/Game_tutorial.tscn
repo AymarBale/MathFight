@@ -1,0 +1,568 @@
+[gd_scene load_steps=97 format=2]
+
+[ext_resource path="res://UI/PaperUIKit/Pngs/BlueButton.png" type="Texture" id=1]
+[ext_resource path="res://UI/slice33.png" type="Texture" id=2]
+[ext_resource path="res://Main_Screen/Designer.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://Game_tutorial/Game_tutorial.gd" type="Script" id=4]
+[ext_resource path="res://UI/paper_ui/paper_panel_2200_x_181.png" type="Texture" id=5]
+[ext_resource path="res://Game_tutorial/Foxy/01 Idle/Red_Foxy_Idle_000.png" type="Texture" id=6]
+[ext_resource path="res://UI/paper_ui/paper_panel_242_x_240.png" type="Texture" id=7]
+[ext_resource path="res://UI/slice35.png" type="Texture" id=8]
+[ext_resource path="res://Game_tutorial/Bunny/01 Idle/Red_Bunny_Idle_002.png" type="Texture" id=9]
+[ext_resource path="res://Game_tutorial/Foxy/01 Idle/Red_Foxy_Idle_004.png" type="Texture" id=10]
+[ext_resource path="res://Game_tutorial/Foxy/01 Idle/Red_Foxy_Idle_005.png" type="Texture" id=11]
+[ext_resource path="res://Game_tutorial/Bunny/01 Idle/Red_Bunny_Idle_000.png" type="Texture" id=12]
+[ext_resource path="res://Game_tutorial/Foxy/01 Idle/Red_Foxy_Idle_006.png" type="Texture" id=13]
+[ext_resource path="res://Game_tutorial/Bunny/01 Idle/Red_Bunny_Idle_007.png" type="Texture" id=14]
+[ext_resource path="res://Game_tutorial/Foxy/01 Idle/Red_Foxy_Idle_007.png" type="Texture" id=15]
+[ext_resource path="res://Game_tutorial/stripes_repeating.png" type="Texture" id=16]
+[ext_resource path="res://Game_tutorial/Bunny/01 Idle/Red_Bunny_Idle_005.png" type="Texture" id=17]
+[ext_resource path="res://Game_tutorial/Bunny/01 Idle/Red_Bunny_Idle_003.png" type="Texture" id=18]
+[ext_resource path="res://Game_tutorial/Bunny/01 Idle/Red_Bunny_Idle_004.png" type="Texture" id=19]
+[ext_resource path="res://Game_tutorial/Bunny/01 Idle/Red_Bunny_Idle_006.png" type="Texture" id=20]
+[ext_resource path="res://Game_tutorial/Bunny/01 Idle/Red_Bunny_Idle_001.png" type="Texture" id=21]
+[ext_resource path="res://Game_tutorial/Foxy/01 Idle/Red_Foxy_Idle_002.png" type="Texture" id=22]
+[ext_resource path="res://Game_tutorial/Foxy/01 Idle/Red_Foxy_Idle_003.png" type="Texture" id=23]
+[ext_resource path="res://Game_tutorial/Foxy/01 Idle/Red_Foxy_Idle_001.png" type="Texture" id=24]
+[ext_resource path="res://Main_Screen/Life Hacks.otf" type="DynamicFontData" id=25]
+[ext_resource path="res://Main_Screen/Option_Button_math_fight/oie_HVnBcZ0PRWXy.png" type="Texture" id=26]
+[ext_resource path="res://Main_Screen/Option_Button_math_fight/oie_JrGe32hT3zoI.png" type="Texture" id=27]
+[ext_resource path="res://Game_tutorial/Pointer.tscn" type="PackedScene" id=28]
+[ext_resource path="res://Game_tutorial/whitelight.png" type="Texture" id=29]
+[ext_resource path="res://Game_tutorial/unpress.png" type="Texture" id=30]
+[ext_resource path="res://Game_tutorial/tile001.png" type="Texture" id=31]
+[ext_resource path="res://UI/fonts/Kenney Bold.ttf" type="DynamicFontData" id=32]
+[ext_resource path="res://Game_tutorial/Foxy/08 Punch 3/Red_Foxy_Punch3_001.png" type="Texture" id=33]
+[ext_resource path="res://Game_tutorial/Foxy/08 Punch 3/Red_Foxy_Punch3_002.png" type="Texture" id=34]
+[ext_resource path="res://Game_tutorial/Foxy/07 Punch 2/Red_Foxy_Punch2_003.png" type="Texture" id=35]
+[ext_resource path="res://Game_tutorial/Foxy/07 Punch 2/Red_Foxy_Punch2_004.png" type="Texture" id=36]
+[ext_resource path="res://Game_tutorial/Foxy/08 Punch 3/Red_Foxy_Punch3_003.png" type="Texture" id=37]
+[ext_resource path="res://Game_tutorial/Foxy/07 Punch 2/Red_Foxy_Punch2_002.png" type="Texture" id=38]
+[ext_resource path="res://Game_tutorial/Foxy/08 Punch 3/Red_Foxy_Punch3_000.png" type="Texture" id=39]
+[ext_resource path="res://Game_tutorial/Foxy/11 Hurt/Red_Foxy_Hurt_001.png" type="Texture" id=40]
+[ext_resource path="res://Game_tutorial/Foxy/08 Punch 3/Red_Foxy_Punch3_004.png" type="Texture" id=41]
+[ext_resource path="res://Game_tutorial/Foxy/11 Hurt/Red_Foxy_Hurt_000.png" type="Texture" id=42]
+[ext_resource path="res://Game_tutorial/Foxy/11 Hurt/Red_Foxy_Hurt_002.png" type="Texture" id=43]
+[ext_resource path="res://Game_tutorial/Bunny/08 Punch 3/Red_Bunny_Punch3_003.png" type="Texture" id=44]
+[ext_resource path="res://Game_tutorial/Bunny/05 Block/Red_Bunny_Block_000.png" type="Texture" id=45]
+[ext_resource path="res://Game_tutorial/Bunny/05 Block/Red_Bunny_Block_001.png" type="Texture" id=46]
+[ext_resource path="res://Game_tutorial/Bunny/05 Block/Red_Bunny_Block_003.png" type="Texture" id=47]
+[ext_resource path="res://Game_tutorial/Bunny/05 Block/Red_Bunny_Block_004.png" type="Texture" id=48]
+[ext_resource path="res://Game_tutorial/Bunny/05 Block/Red_Bunny_Block_002.png" type="Texture" id=49]
+[ext_resource path="res://Game_tutorial/Bunny/05 Block/Red_Bunny_Block_005.png" type="Texture" id=50]
+[ext_resource path="res://Game_tutorial/Foxy/07 Punch 2/Red_Foxy_Punch2_000.png" type="Texture" id=51]
+[ext_resource path="res://Game_tutorial/Bunny/06 Punch 1/Red_Bunny_Punch1_004.png" type="Texture" id=52]
+[ext_resource path="res://Game_tutorial/Bunny/07 Punch 2/Red_Bunny_Punch2_000.png" type="Texture" id=53]
+[ext_resource path="res://Game_tutorial/Bunny/08 Punch 3/Red_Bunny_Punch3_000.png" type="Texture" id=54]
+[ext_resource path="res://Game_tutorial/Bunny/08 Punch 3/Red_Bunny_Punch3_004.png" type="Texture" id=55]
+[ext_resource path="res://Game_tutorial/Bunny/07 Punch 2/Red_Bunny_Punch2_001.png" type="Texture" id=56]
+[ext_resource path="res://Game_tutorial/Bunny/07 Punch 2/Red_Bunny_Punch2_002.png" type="Texture" id=57]
+[ext_resource path="res://Game_tutorial/Bunny/07 Punch 2/Red_Bunny_Punch2_003.png" type="Texture" id=58]
+[ext_resource path="res://Game_tutorial/Bunny/07 Punch 2/Red_Bunny_Punch2_004.png" type="Texture" id=59]
+[ext_resource path="res://Game_tutorial/Bunny/08 Punch 3/Red_Bunny_Punch3_001.png" type="Texture" id=60]
+[ext_resource path="res://Game_tutorial/Bunny/08 Punch 3/Red_Bunny_Punch3_002.png" type="Texture" id=61]
+[ext_resource path="res://Game_tutorial/Foxy/06 Punch 1/Red_Foxy_Punch1_004.png" type="Texture" id=62]
+[ext_resource path="res://Game_tutorial/Foxy/06 Punch 1/Red_Foxy_Punch1_003.png" type="Texture" id=63]
+[ext_resource path="res://Game_tutorial/Foxy/07 Punch 2/Red_Foxy_Punch2_001.png" type="Texture" id=64]
+[ext_resource path="res://Game_tutorial/Foxy/06 Punch 1/Red_Foxy_Punch1_002.png" type="Texture" id=65]
+[ext_resource path="res://Game_tutorial/Foxy/06 Punch 1/Red_Foxy_Punch1_000.png" type="Texture" id=66]
+[ext_resource path="res://Game_tutorial/Foxy/06 Punch 1/Red_Foxy_Punch1_001.png" type="Texture" id=67]
+[ext_resource path="res://Game_tutorial/Foxy/11 Hurt/Red_Foxy_Hurt_004.png" type="Texture" id=68]
+[ext_resource path="res://Game_tutorial/Foxy/11 Hurt/Red_Foxy_Hurt_003.png" type="Texture" id=69]
+[ext_resource path="res://Game_tutorial/Bunny/06 Punch 1/Red_Bunny_Punch1_002.png" type="Texture" id=70]
+[ext_resource path="res://Game_tutorial/Bunny/06 Punch 1/Red_Bunny_Punch1_003.png" type="Texture" id=71]
+[ext_resource path="res://Game_tutorial/Bunny/06 Punch 1/Red_Bunny_Punch1_000.png" type="Texture" id=72]
+[ext_resource path="res://Game_tutorial/Bunny/06 Punch 1/Red_Bunny_Punch1_001.png" type="Texture" id=73]
+[ext_resource path="res://Game_tutorial/Bar/hp bar 50 of 50.png" type="Texture" id=74]
+[ext_resource path="res://Game_tutorial/Bar/hp bar full.png" type="Texture" id=75]
+[ext_resource path="res://Game_tutorial/Bunny/11 Hurt/Red_Bunny_Hurt_000.png" type="Texture" id=76]
+[ext_resource path="res://Game_tutorial/Bunny/11 Hurt/Red_Bunny_Hurt_001.png" type="Texture" id=77]
+[ext_resource path="res://Game_tutorial/Bunny/11 Hurt/Red_Bunny_Hurt_003.png" type="Texture" id=78]
+[ext_resource path="res://Game_tutorial/Bunny/11 Hurt/Red_Bunny_Hurt_004.png" type="Texture" id=79]
+[ext_resource path="res://Game_tutorial/Bunny/11 Hurt/Red_Bunny_Hurt_002.png" type="Texture" id=80]
+[ext_resource path="res://UI/pointing arrows/arrow.png" type="Texture" id=81]
+[ext_resource path="res://Game_tutorial/77199__spol__hip-hop-beat-loop7.wav" type="AudioStream" id=82]
+[ext_resource path="res://Main_Screen/glove_bar.jpg" type="Texture" id=83]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+font_data = ExtResource( 3 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 21 ), ExtResource( 9 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 17 ), ExtResource( 20 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "idle",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 76 ), ExtResource( 77 ), ExtResource( 80 ), ExtResource( 78 ), ExtResource( 79 ) ],
+"loop": true,
+"name": "hurt",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 45 ), ExtResource( 46 ), ExtResource( 49 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 50 ) ],
+"loop": true,
+"name": "block",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 72 ), ExtResource( 73 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 54 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 44 ), ExtResource( 55 ) ],
+"loop": false,
+"name": "attack",
+"speed": 25.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 24 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "idle",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 42 ), ExtResource( 40 ), ExtResource( 43 ), ExtResource( 69 ), ExtResource( 68 ) ],
+"loop": false,
+"name": "hurt",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 66 ), ExtResource( 67 ), ExtResource( 65 ), ExtResource( 63 ), ExtResource( 62 ), ExtResource( 51 ), ExtResource( 64 ), ExtResource( 38 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 39 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 37 ), ExtResource( 41 ) ],
+"loop": false,
+"name": "attack",
+"speed": 15.0
+} ]
+
+[sub_resource type="DynamicFont" id=4]
+size = 64
+font_data = ExtResource( 25 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 32
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 32
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 100
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 100
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 100
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 25
+font_data = ExtResource( 25 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 32
+font_data = ExtResource( 25 )
+
+[sub_resource type="DynamicFont" id=12]
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 20
+font_data = ExtResource( 32 )
+
+[node name="Game_tutorial" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 3048.0
+margin_bottom = 1474.0
+texture = ExtResource( 83 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="Background"]
+modulate = Color( 0.964706, 0.133333, 0.133333, 1 )
+margin_right = 872.0
+margin_bottom = 581.0
+texture = ExtResource( 16 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background"]
+margin_left = -15.892
+margin_top = -68.8651
+margin_right = 847.108
+margin_bottom = 149.135
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.301961, 0.788235, 0.14902, 1 )
+custom_colors/font_outline_modulate = Color( 0.113725, 0.478431, 0.94902, 1 )
+custom_colors/font_color_shadow = Color( 0.0431373, 0.00784314, 0.00784314, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/line_spacing = 5
+custom_constants/shadow_offset_y = 5
+text = "tutorial"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Characters" type="Node2D" parent="."]
+position = Vector2( -55.0921, 37.0812 )
+
+[node name="player" type="Node2D" parent="Characters"]
+position = Vector2( 42.3785, -57.211 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Characters/player"]
+position = Vector2( 252.152, 348.564 )
+frames = SubResource( 2 )
+animation = "idle"
+frame = 1
+playing = true
+
+[node name="enemy" type="Node2D" parent="Characters"]
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="Characters/enemy"]
+position = Vector2( 691.83, 293.471 )
+frames = SubResource( 3 )
+animation = "idle"
+frame = 6
+playing = true
+flip_h = true
+
+[node name="MainBoard" type="Node2D" parent="."]
+position = Vector2( 42.3785, 55.0921 )
+scale = Vector2( 0.9, 0.9 )
+
+[node name="paper_panel_2200_x_181" type="Sprite" parent="MainBoard"]
+position = Vector2( 448.349, 516.932 )
+scale = Vector2( 0.339762, 0.63709 )
+texture = ExtResource( 5 )
+
+[node name="paper_panel_242_x_240" type="Sprite" parent="MainBoard/paper_panel_2200_x_181"]
+position = Vector2( -799.831, -67.8968 )
+scale = Vector2( 1.5, 0.8 )
+texture = ExtResource( 7 )
+
+[node name="BlueButton" type="Sprite" parent="MainBoard/paper_panel_2200_x_181/paper_panel_242_x_240"]
+position = Vector2( -10.0049, -157.73 )
+texture = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="MainBoard/paper_panel_2200_x_181/paper_panel_242_x_240/BlueButton"]
+margin_left = -127.04
+margin_top = -39.2646
+margin_right = 117.96
+margin_bottom = 44.7354
+custom_fonts/font = SubResource( 4 )
+text = "attack"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="attack" type="TouchScreenButton" parent="MainBoard/paper_panel_2200_x_181/paper_panel_242_x_240"]
+position = Vector2( -107.017, -127.705 )
+scale = Vector2( 0.970272, 0.928973 )
+normal = ExtResource( 2 )
+
+[node name="paper_panel_242_x_241" type="Sprite" parent="MainBoard/paper_panel_2200_x_181"]
+position = Vector2( 768.649, -77.043 )
+scale = Vector2( 1.48964, 0.812915 )
+texture = ExtResource( 7 )
+
+[node name="BlueButton" type="Sprite" parent="MainBoard/paper_panel_2200_x_181/paper_panel_242_x_241"]
+position = Vector2( -2.3988, -132.608 )
+scale = Vector2( 1.00695, 0.984112 )
+texture = ExtResource( 1 )
+
+[node name="Label2" type="Label" parent="MainBoard/paper_panel_2200_x_181/paper_panel_242_x_241/BlueButton"]
+margin_left = -120.11
+margin_top = -39.2646
+margin_right = 124.89
+margin_bottom = 44.7354
+custom_fonts/font = SubResource( 4 )
+text = "defence"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="defence" type="TouchScreenButton" parent="MainBoard/paper_panel_2200_x_181/paper_panel_242_x_241"]
+position = Vector2( -104.738, -105.333 )
+scale = Vector2( 0.977019, 0.914214 )
+normal = ExtResource( 8 )
+
+[node name="left" type="TouchScreenButton" parent="MainBoard/paper_panel_2200_x_181"]
+position = Vector2( -582.073, -53.5845 )
+scale = Vector2( 3.74978, 1.93854 )
+normal = ExtResource( 26 )
+pressed = ExtResource( 27 )
+
+[node name="Label" type="Label" parent="MainBoard/paper_panel_2200_x_181/left"]
+visible = false
+margin_top = 7.0
+margin_right = 118.0
+margin_bottom = 55.0
+custom_fonts/font = SubResource( 5 )
+text = "1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="right" type="TouchScreenButton" parent="MainBoard/paper_panel_2200_x_181"]
+position = Vector2( 38.112, -53 )
+scale = Vector2( 3.74978, 1.93854 )
+normal = ExtResource( 26 )
+pressed = ExtResource( 27 )
+
+[node name="Label" type="Label" parent="MainBoard/paper_panel_2200_x_181/right"]
+visible = false
+margin_left = 10.1638
+margin_top = 12.719
+margin_right = 128.164
+margin_bottom = 60.719
+custom_fonts/font = SubResource( 6 )
+text = "3"
+align = 1
+valign = 1
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Equation" type="Node2D" parent="."]
+position = Vector2( 25.4271, -57.211 )
+
+[node name="one" type="Label" parent="Equation"]
+visible = false
+margin_left = 260.785
+margin_top = 435.097
+margin_right = 313.785
+margin_bottom = 544.097
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color = Color( 0.301961, 0.788235, 0.14902, 1 )
+custom_colors/font_outline_modulate = Color( 0.113725, 0.478431, 0.94902, 1 )
+custom_colors/font_color_shadow = Color( 0.0431373, 0.00784314, 0.00784314, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/line_spacing = 5
+custom_constants/shadow_offset_y = 5
+text = "t"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="e_timer" type="Timer" parent="Equation"]
+one_shot = true
+
+[node name="plus" type="Label" parent="Equation"]
+visible = false
+margin_left = 395.337
+margin_top = 432.978
+margin_right = 448.337
+margin_bottom = 541.978
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 0.301961, 0.788235, 0.14902, 1 )
+custom_colors/font_outline_modulate = Color( 0.113725, 0.478431, 0.94902, 1 )
+custom_colors/font_color_shadow = Color( 0.0431373, 0.00784314, 0.00784314, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/line_spacing = 5
+custom_constants/shadow_offset_y = 5
+text = "t"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="two" type="Label" parent="Equation"]
+visible = false
+margin_left = 511.877
+margin_top = 432.978
+margin_right = 564.877
+margin_bottom = 541.978
+custom_fonts/font = SubResource( 9 )
+custom_colors/font_color = Color( 0.301961, 0.788235, 0.14902, 1 )
+custom_colors/font_outline_modulate = Color( 0.113725, 0.478431, 0.94902, 1 )
+custom_colors/font_color_shadow = Color( 0.0431373, 0.00784314, 0.00784314, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/line_spacing = 5
+custom_constants/shadow_offset_y = 5
+text = "t"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="OverallTimer" type="Timer" parent="."]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0.196078, 0.0235294, 0.0235294, 1 )
+
+[node name="Pointer" parent="." instance=ExtResource( 28 )]
+
+[node name="Instruction" type="Node2D" parent="."]
+
+[node name="Label" type="Label" parent="Instruction"]
+margin_right = 862.0
+margin_bottom = 334.0
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/line_spacing = 5
+custom_constants/shadow_offset_y = 5
+text = "hhhh"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Light2D" type="Light2D" parent="Instruction/Label"]
+position = Vector2( 3.05176e-05, -1.05946 )
+texture = ExtResource( 29 )
+texture_scale = 3.1
+
+[node name="Position2D" type="Position2D" parent="Instruction"]
+position = Vector2( 441.796, 181.168 )
+
+[node name="start_button" type="TouchScreenButton" parent="Instruction"]
+position = Vector2( 376.11, 237.32 )
+scale = Vector2( 2, 2 )
+normal = ExtResource( 30 )
+pressed = ExtResource( 31 )
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 332.961, 456.989 )
+
+[node name="Pointer2" parent="." instance=ExtResource( 28 )]
+
+[node name="p" type="Node2D" parent="."]
+position = Vector2( 703.484, 422.726 )
+rotation = 4.71239
+
+[node name="ProgressBar" type="ProgressBar" parent="p"]
+margin_left = -137.346
+margin_top = 114.703
+margin_right = 404.654
+margin_bottom = 148.703
+size_flags_horizontal = 0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="p/ProgressBar"]
+margin_left = 310.423
+margin_top = 29.6649
+margin_right = 462.423
+margin_bottom = 71.6649
+rect_rotation = 178.1
+custom_fonts/font = SubResource( 11 )
+text = "rage bar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="health_bar" type="Node2D" parent="."]
+
+[node name="player_health" type="TextureProgress" parent="health_bar"]
+self_modulate = Color( 0.152941, 0.827451, 0.717647, 1 )
+margin_left = 17.6541
+margin_top = 15.9782
+margin_right = 237.654
+margin_bottom = 50.9782
+max_value = 5.0
+step = 0.0
+value = 5.0
+texture_under = ExtResource( 74 )
+texture_progress = ExtResource( 75 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="health_bar/player_health"]
+margin_left = 2.11896
+margin_top = 27.5461
+margin_right = 210.119
+margin_bottom = 74.5461
+custom_fonts/font = SubResource( 12 )
+text = "player_health"
+
+[node name="enemy_health" type="TextureProgress" parent="health_bar"]
+margin_left = 597.286
+margin_top = 11.7027
+margin_right = 819.286
+margin_bottom = 50.7027
+max_value = 5.0
+value = 5.0
+texture_under = ExtResource( 74 )
+texture_progress = ExtResource( 75 )
+fill_mode = 1
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="health_bar/enemy_health"]
+margin_left = 16.8455
+margin_top = 25.4648
+margin_right = 208.845
+margin_bottom = 72.4648
+custom_fonts/font = SubResource( 12 )
+text = "enemy_health"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Next_button" type="Node2D" parent="."]
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Next_button"]
+position = Vector2( 729.97, 319.958 )
+rotation = 3.14159
+scale = Vector2( 0.3, 0.3 )
+normal = ExtResource( 81 )
+
+[node name="Label" type="Label" parent="Next_button"]
+margin_left = 583.962
+margin_top = 273.297
+margin_right = 712.962
+margin_bottom = 313.297
+custom_fonts/font = SubResource( 13 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/line_spacing = 5
+text = "next"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 82 )
+volume_db = -12.019
+
+[connection signal="animation_finished" from="Characters/player/AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="animation_finished" from="Characters/enemy/AnimatedSprite2" to="." method="_on_AnimatedSprite2_animation_finished"]
+[connection signal="released" from="MainBoard/paper_panel_2200_x_181/paper_panel_242_x_240/attack" to="." method="_on_attack_released"]
+[connection signal="pressed" from="MainBoard/paper_panel_2200_x_181/paper_panel_242_x_241/defence" to="." method="_on_defence_pressed"]
+[connection signal="pressed" from="MainBoard/paper_panel_2200_x_181/left" to="." method="_on_left_pressed"]
+[connection signal="released" from="MainBoard/paper_panel_2200_x_181/right" to="." method="_on_right_released"]
+[connection signal="timeout" from="Equation/e_timer" to="." method="_on_e_timer_timeout"]
+[connection signal="released" from="Instruction/start_button" to="." method="_on_start_button_released"]
+[connection signal="pressed" from="Next_button/TouchScreenButton" to="." method="_on_TouchScreenButton_pressed"]

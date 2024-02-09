@@ -1,0 +1,82 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://UI/final_clock/newly_and_improve_emptytime_bar(ver2).png" type="Texture" id=1]
+[ext_resource path="res://UI/final_clock/newly_and_improve_emptytime_bar.png" type="Texture" id=2]
+[ext_resource path="res://UI/final_clock/final_clock.gd" type="Script" id=3]
+[ext_resource path="res://UI/final_clock/small_triangle/down.png" type="Texture" id=4]
+[ext_resource path="res://UI/final_clock/timer.png" type="Texture" id=5]
+[ext_resource path="res://UI/final_clock/final_timer_clock.wav" type="AudioStream" id=6]
+[ext_resource path="res://UI/final_clock/small_triangle/up.png" type="Texture" id=8]
+
+[node name="final_clock" type="Node2D"]
+position = Vector2( 172.788, 549.246 )
+scale = Vector2( 2, 1.8 )
+script = ExtResource( 3 )
+
+[node name="clock" type="Node2D" parent="."]
+position = Vector2( -113.393, -173.869 )
+
+[node name="t" type="TextureProgress" parent="clock"]
+modulate = Color( 1, 1, 1, 0.415686 )
+margin_left = 121.0
+margin_top = 165.0
+margin_right = 391.0
+margin_bottom = 188.0
+step = 0.0
+value = 100.0
+texture_under = ExtResource( 2 )
+texture_progress = ExtResource( 1 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="timer" type="Sprite" parent="."]
+position = Vector2( -4.036, 1.13077 )
+scale = Vector2( 0.12, 0.12 )
+texture = ExtResource( 5 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+autostart = true
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 0.106995, -11.9532 )
+__meta__ = {
+"_gizmo_extents_": 1000.0
+}
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="indication_arrow_timer" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="flash" type="Node2D" parent="."]
+position = Vector2( -113.393, -173.869 )
+
+[node name="Flash_Timer" type="Timer" parent="flash"]
+one_shot = true
+
+[node name="Pause_Timer" type="Timer" parent="flash"]
+one_shot = true
+
+[node name="kiKno7ByT2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 274.841, 15.6268 )
+scale = Vector2( 0.04, 0.05 )
+texture = ExtResource( 8 )
+
+[node name="kiKno7ByT" type="Sprite" parent="."]
+visible = false
+position = Vector2( 274.598, -10.5412 )
+scale = Vector2( 0.04, 0.05 )
+texture = ExtResource( 4 )
+
+[node name="clock_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 6 )
+
+[connection signal="fill_up" from="." to="." method="_on_final_clock_fill_up"]
+[connection signal="timeout" from="indication_arrow_timer" to="." method="_on_indication_arrow_timer_timeout"]
+[connection signal="timeout" from="flash/Flash_Timer" to="." method="_on_Flash_Timer_timeout"]
+[connection signal="timeout" from="flash/Pause_Timer" to="." method="_on_Pause_Timer_timeout"]

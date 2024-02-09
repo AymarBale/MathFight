@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/553617__humus3000__chill-vibes.wav-3f600e7e1a46fa1ab24c8a324c632d22.sample"
+
+[deps]
+
+source_file="res://Pre_start_screen/asset_final_for_pre_start/553617__humus3000__chill-vibes.wav"
+dest_files=[ "res://.import/553617__humus3000__chill-vibes.wav-3f600e7e1a46fa1ab24c8a324c632d22.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
